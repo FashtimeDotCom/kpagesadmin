@@ -45,8 +45,21 @@ $(function(){
    }
    adjustmainpanelheight();
 
-   $('.menutoggle, #chatview').click(function(event) {
-       $('body').toggleClass('pleft-collapsed chat-view');
+    $('.menutoggle').click(function(event) {
+       $('body').toggleClass('pleft-collapsed');
+       if(!$('body').hasClass('pleft-collapsed')){
+         $('body').removeClass('chat-view');
+       }
+        adjustmainpanelheight();
+   });  
+
+   $('#chatview').click(function(event) {
+       $('body').toggleClass('chat-view');
+       if($('body').hasClass('chat-view')){
+         $('body').addClass('pleft-collapsed');
+       }else{
+         $('body').removeClass('pleft-collapsed');
+       }
         adjustmainpanelheight();
    });
 
