@@ -1,0 +1,133 @@
+@import url('bootstrap.min.css');
+@import url('bootstrap_override.css');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #1d2939;
+	line-height: 21px;
+	color: #636e7b;
+}
+
+#masker {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e4e7ea;
+	z-index: 10000;
+}
+
+.pleft {
+	width: 240px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	
+}
+
+.pcontent {
+	margin-left: 240px;
+	background: #e4e7ea;
+	min-height: 1000px;
+}
+
+.pright {
+	width: 240px;
+	height: 100%;
+	position: fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+	top: 0;
+	right: -240px;
+}
+
+.logobox {
+	padding: 10px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.logobox span{
+	color: #1caf9a;
+}
+.logobox h1{
+	padding: 5px;
+	margin: 0px;
+}  
+
+.pleft .navbox {
+	padding: 5px 15px;
+}
+
+.nav-kpages >li >a {
+	padding: 7px 10px;
+	color: #8f939e;
+}
+.nav-kpages li .glyphicon {
+font-size: 16px;
+vertical-align: middle;
+margin-right: 10px;
+width: 16px;
+text-align: center;
+}
+
+.nav-kpages > li.active > a,
+.nav-kpages > li.active > a:hover,
+.nav-kpages > li.active > a:focus {
+    background-color: #1caf9a;
+    color: #fff;
+}
+
+
+.nav-kpages .children {
+	list-style: none;
+	display: none;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.nav-kpages >li a>.arrow {
+	display: inline-block;
+	width: 14px!important;
+	height: 14px;
+	line-height: 14px;
+	text-shadow: none;
+	font-size: 12px;
+	position: absolute;
+	right: 4px;
+	top: 11px;
+	padding: 0;
+	color: #666;
+	font-style: normal;
+}
+
+.nav-kpages .children {
+	list-style: none;
+	display: none;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.nav-kpages .children > li > a {
+	color: #94989d;
+	font-size: 12px;
+	display: block;
+	padding: 5px 0 5px 27px;
+	-moz-transition: all 0.2s ease-out 0s;
+	-webkit-transition: all 0.2s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
+	}
+
+.nav-kpages .children > li .glyphicon {
+	font-size: 12px;
+	opacity: 0.5;
+	margin-right: 5px;
+	text-align: left;
+	width: auto;
+	vertical-align: baseline;
+}
