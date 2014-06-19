@@ -11,6 +11,38 @@ body {
 	color: #636e7b;
 }
 
+.pleft-collapsed .pleft {
+	width: 50px;
+	top: 50px;
+}
+
+.pleft-collapsed .pleft .navbox {
+	padding: 5px;
+}
+
+.pleft-collapsed .pleft  span, .pleft-collapsed .pleft .arrow{
+	display: none;
+}
+
+.pleft-collapsed .logobox{
+	display: none;
+}
+
+.pleft-collapsed .pcontent {
+	margin-left: 50px;
+}
+
+.pleft-collapsed .headerbar {
+	margin-left: -50px;
+}
+
+.chat-view .pcontent{
+	margin-right: 240px;
+}
+.chat-view .pright{
+	right: 0px;
+}
+
 #masker {
 	position: fixed;
 	top: 0;
@@ -47,9 +79,10 @@ body {
 }
 
 .logobox {
-	padding: 10px;
+	padding: 5px 10px;
 	text-align: center;
 	background-color: #ffffff;
+	height: 50px;
 }
 
 .logobox span{
@@ -58,6 +91,7 @@ body {
 .logobox h1{
 	padding: 5px;
 	margin: 0px;
+	font-size: 24px;
 }  
 
 .pleft .navbox {
@@ -69,11 +103,11 @@ body {
 	color: #8f939e;
 }
 .nav-kpages li .glyphicon {
-font-size: 16px;
-vertical-align: middle;
-margin-right: 10px;
-width: 16px;
-text-align: center;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 16px;
+	text-align: center;
 }
 
 .nav-kpages > li.active > a,
@@ -130,4 +164,61 @@ text-align: center;
 	text-align: left;
 	width: auto;
 	vertical-align: baseline;
+}
+
+
+/** 上部样式 **/
+.headerbar {
+	background: #ffffff;
+	border-left: 1px solid #eee;
+	display: block;
+	clear: both;
+}
+.menutoggle {
+	float: left;
+	width: 50px;
+	height: 50px;
+	font-size: 22px;
+	cursor: pointer;
+	float: left;
+	color: #1d2939;
+	border-right: 1px solid #eee;
+	-moz-transition: all 0.2s ease-out 0s;
+	-webkit-transition: all 0.2s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
+	background: #fff;
+}
+
+.menutoggle .fa, .menutoggle .glyphicon {
+	margin: 14px 0 0 15px;
+}
+
+.searchform input {
+	width: 250px;
+	float: left;
+	padding: 18px 20px;
+	border: 0;
+	border-right: 1px solid #eee;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	height: 50px;
+	font-size: 14px;
+}
+
+.headermenu {
+	list-style: none;
+	height: 40px;
+	padding: 10px 20px;
+}
+
+.headermenu li {
+	display: inline-block;
+	float: left;
+	border-left: 1px solid #eee;
+	position: relative;
+}
+/** 正文 样式 **/
+.pbody{
+	padding: 5px;
 }

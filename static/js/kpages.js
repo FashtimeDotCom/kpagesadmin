@@ -44,4 +44,10 @@ $(function(){
          $('.pcontent').height(docHeight);
    }
    adjustmainpanelheight();
+
+   $('.menutoggle, #chatview').click(function(event) {
+       $('body').toggleClass('pleft-collapsed chat-view');
+        adjustmainpanelheight();
+   });
+
 })

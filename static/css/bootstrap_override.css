@@ -11,3 +11,12 @@
    vertical-align: middle;
    display: inline-block;
 }
+
+.btn {
+	border-radius:0;
+	border: 0px;
+}
+
+.btn-default .badge {
+	background-color: #D9534F; 
+}
