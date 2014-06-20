@@ -222,3 +222,70 @@ body {
 .pbody{
 	padding: 5px;
 }
+
+
+/** 右边栏样式 **/
+
+.pright,
+.pright label {
+    color: #999;
+}
+
+.pright .nav-tabs {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #131d29;
+    position: fixed;
+    width: 240px;
+}
+
+.pright .nav-tabs > li {
+	display: table-cell;
+	width: 1%;
+}
+
+
+.pright .nav-tabs > li > a {
+    padding: 15px 20px 16px 20px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: rgba(255,255,255,0.5);
+    border: 0px;
+}
+
+.pright .nav-tabs > .active > a,
+.pright .nav-tabs > .active > a:hover,
+.pright .nav-tabs > .active > a:focus {
+    background: #1D2939;
+    color: #fff;
+    border: 0px;
+}
+
+.pright .tab-content {
+	background: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin-top: 50px;
+	padding: 5px;
+}
+
+.pright .panel {
+	border-radius: 0px;
+	background-color: #1D2939;
+	border: 0px;
+}
+
+.pright .panel-default>.panel-heading {
+	color: #ffffff;
+	background-color: #1D2939;
+	border:0px;
+	padding: 10px 5px;
+}
+
+.pright .panel-body {
+	padding: 10px;
+}
+
