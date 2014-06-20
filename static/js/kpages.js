@@ -45,7 +45,16 @@ $(function(){
    }
    adjustmainpanelheight();
 
-    $('.menutoggle').click(function(event) {
+
+   
+   $('.nav-kpages > li').hover(function(){
+      jQuery(this).addClass('nav-hover');
+   }, function(){
+      jQuery(this).removeClass('nav-hover');
+   });
+   
+
+   $('.menutoggle').click(function(event) {
        $('body').toggleClass('pleft-collapsed');
        if(!$('body').hasClass('pleft-collapsed')){
          $('body').removeClass('chat-view');
@@ -61,6 +70,10 @@ $(function(){
          $('body').removeClass('pleft-collapsed');
        }
         adjustmainpanelheight();
+   });
+
+   $('.chatuserlist li').click(function(event) {
+      
    });
 
 })

@@ -17,7 +17,7 @@ body {
 }
 
 .pleft-collapsed .pleft .navbox {
-	padding: 5px;
+	padding: 0px;
 }
 
 .pleft-collapsed .pleft  span, .pleft-collapsed .pleft .arrow{
@@ -167,6 +167,96 @@ body {
 }
 
 
+.pleft-collapsed .nav-kpages {
+    margin: 5px;   
+}
+
+.pleft-collapsed .nav-kpages li a {
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 0px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.pleft-collapsed .nav-kpages > li > a:hover {
+    border-radius: 0;
+}
+
+.pleft-collapsed .nav-kpages > li.nav-parent > a {
+    background-image: none;
+}
+
+
+.pleft-collapsed .nav-kpages > li > a > span {
+    position: absolute;
+    background: #fff;
+    padding: 10px 10px 10px 5px;
+    left: 40px;
+    top: 0;
+    min-width: 209px;
+    text-align: left;
+    z-index: 100;
+    display: none;
+
+}
+
+
+
+.pleft-collapsed .nav-kpages > li > a .badge {
+    display: none;
+}
+
+.pleft-collapsed .nav-kpages > li.active > a > span{
+    -moz-border-radius: 0 2px 0 0;
+    -webkit-border-radius: 0 2px 0 0;
+    border-radius: 0 2px 0 0;
+}
+
+.pleft-collapsed .nav-kpages ul {
+    display: none;
+}
+
+.pleft-collapsed .nav-kpages > li.nav-hover > a {
+    background: #fff;
+    color: #1d2939;
+}
+
+.pleft-collapsed .nav-kpages > li.nav-hover.active > a {
+    background: #1CAF9A;
+    color: #fff;
+}
+
+.pleft-collapsed .nav-kpages > li.nav-hover > a > span {
+    display: block;
+}
+
+.pleft-collapsed .nav-kpages > li.nav-hover.active > a > span {
+    background: #1CAF9A;
+    color: #fff;
+}
+
+.pleft-collapsed .nav-kpages li.nav-hover ul {
+    display: block;
+    position: absolute;
+    top: 41px;
+    left: 45px;
+    margin: 0;
+    min-width: 204px;
+    background: #1d2939;
+    z-index: 100;
+
+}
+
+.pleft-collapsed .nav-kpages ul a {
+    text-align: left;
+    padding: 6px 10px;
+    padding-left: 0;
+}
+
+
 /** 上部样式 **/
 .headerbar {
 	background: #ffffff;
@@ -246,7 +336,7 @@ body {
 }
 
 
-.pright .nav-tabs > li > a {
+.pright .nav-tabs > li > a{
     padding: 15px 20px 16px 20px;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -257,10 +347,15 @@ body {
 
 .pright .nav-tabs > .active > a,
 .pright .nav-tabs > .active > a:hover,
-.pright .nav-tabs > .active > a:focus {
+.pright .nav-tabs > .active > a:focus{
     background: #1D2939;
     color: #fff;
     border: 0px;
+}
+
+.pright .nav-tabs>li>a:hover{
+    background: #131d29;
+    color: #fff;
 }
 
 .pright .tab-content {
@@ -285,7 +380,32 @@ body {
 	padding: 10px 5px;
 }
 
+.pright .panel-default>.panel-heading h4 {
+	font-size: 14px;
+}
+
 .pright .panel-body {
 	padding: 10px;
 }
 
+
+.pright .media h4{
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+}
+.pright .media{
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+.pright .media .img-circle {
+	padding: 2px; 
+	border: 2px solid #1caf9a;
+}
+
+.pright .sidebartitle{
+	font-size: 14px;
+	padding: 0px;
+	color: #ffffff;
+}
