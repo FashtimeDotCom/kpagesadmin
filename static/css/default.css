@@ -309,6 +309,7 @@ body {
 	position: relative;
 }
 /** 正文 样式 **/
+/*bootstrap .row 左右外边距为-15px， 应比这个数值大*/
 .pbody{
 	padding: 20px;
 }
@@ -388,7 +389,6 @@ body {
 	padding: 10px;
 }
 
-
 .pright .media h4{
 	font-size: 14px;
 	padding: 0px;
@@ -408,4 +408,58 @@ body {
 	font-size: 14px;
 	padding: 0px;
 	color: #ffffff;
+}
+
+.im {
+	position: fixed;
+	top:10%;
+	left:30%;
+	z-index: 999999;
+}
+
+.im .im-header {
+	background-color: #1d2939;
+	padding: 8px;
+	color: #eee;
+}
+
+.im .im-dialog {
+	width: 500px;
+}
+
+.im .im-body {
+	height: 350px;
+	padding: 8px;
+	border: 1px solid #363636;
+	overflow-y: scroll;
+	background: #e4e7ea;
+}
+
+.im .chat-block {
+}
+
+.im .chat-content {
+	display: inline-block;
+	padding: 10px 15px;
+	background: linear-gradient(#CCD,#CCC);
+	border-radius: 3px;
+	max-width: 70%;
+}
+
+.im .self {
+	text-align: right;
+}
+.im .im-footer {
+	background-color: #1d2939;
+	padding: 5px 8px;
+}
+
+.im .im-footer textarea {
+	resize: none;
+	display: inline-block;
+	width: 435px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	overflow: hidden;
+	height: 30px;
 }

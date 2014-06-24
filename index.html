@@ -139,7 +139,9 @@
     </div>
 
     <div class="pbody">
-        xxx
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".IM">
+          I'm IM
+        </button>
     </div>
 
 
@@ -529,8 +531,54 @@
 </div>
 
 
+<!-- IM dialog -->
+<div class="im">
+  <div class="im-dialog">
+    <div class="im-content">
+
+      <div class="im-header">
+        <img src="" alt="江处长">
+        <span class="name">江处长</span>
+      </div>
+
+      <div class="im-body">
+        <div class="chat-block buddy">
+          <p class="chat-content ">Hello Jiang</p>
+        </div>
+        <div class="chat-block self">
+          <p class="chat-content">Yes,I'm Jiang</p>
+        </div>
+        <div class="chat-block buddy">
+          <p class="chat-content ">How Are U</p>
+        </div>
+        <div class="chat-block self">
+          <p class="chat-content">I'm fine</p>
+        </div>
+      </div>
+
+      <footer class="im-footer">
+        <textarea class="chat-textarea"></textarea>
+        <button class="btn btn-sm btn-primary sendmsg">发送</button>
+      </footer>
+
+    </div>
+  </div>
+</div>
 <script src="static/js/jquery-1.10.2.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/kpages.js"></script>
+<script>
+  $(function(){
+    $('.im').on('click', '.sendmsg', function(){
+        var text = $(this).siblings('textarea').val();
+        $(this).siblings('textarea').val('');
+        console.log(text);
+        var $self = $("<div class='chat-block self'><p class='chat-content'></p></div>");
+        $self.find('.chat-content').text(text);
+        $('.im .im-body').append($self);        
+
+    });
+  })
+</script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "kpagesadmin",
+  "version": "0.0.0",
+  "description": "kpagesadmin ===========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comger/kpagesadmin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comger/kpagesadmin/issues"
+  },
+  "homepage": "https://github.com/comger/kpagesadmin",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
