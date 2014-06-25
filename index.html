@@ -139,7 +139,7 @@
     </div>
 
     <div class="pbody">
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".IM">
+        <button class="btn btn-primary btn-lg showIM" data-toggle="modal" data-target=".IM">
           I'm IM
         </button>
     </div>
@@ -532,13 +532,15 @@
 
 
 <!-- IM dialog -->
-<div class="im">
+<div class="im hide">
   <div class="im-dialog">
     <div class="im-content">
 
       <div class="im-header">
-        <img src="" alt="江处长">
         <span class="name">江处长</span>
+        <span class="im-tool im-close">&times</span>
+        <span class="im-tool im-minimize">-</span>
+        <span class="im-tool im-maximization">+</span>
       </div>
 
       <div class="im-body">
@@ -564,20 +566,57 @@
     </div>
   </div>
 </div>
+
 <script src="static/js/jquery-1.10.2.min.js"></script>
+<script src="static/js/jquery-ui-1.10.4.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/kpages.js"></script>
 <script>
   $(function(){
+
+    $('.showIM').click(function(){
+      $('.im').removeClass('hide').css('display','block');
+    });
+
     $('.im').on('click', '.sendmsg', function(){
         var text = $(this).siblings('textarea').val();
-        $(this).siblings('textarea').val('');
-        console.log(text);
-        var $self = $("<div class='chat-block self'><p class='chat-content'></p></div>");
-        $self.find('.chat-content').text(text);
-        $('.im .im-body').append($self);        
+
+        if(text != '') {
+          $(this).siblings('textarea').val('');
+          var $self = $("<div class='chat-block self'><p class='chat-content'></p></div>");
+          $self.find('.chat-content').text(text);
+          $('.im .im-body').append($self);                  
+        }
 
     });
+
+    $('.im').on('click', '.im-close', function(){
+      $(this).parents('.im').fadeOut();
+    })
+
+    $('.im').on('click', '.im-minimize', function(){
+
+      var $im = $(this).parents('.im');
+
+      $im.find('.im-body').css('display','none');
+      $im.find('.im-footer').css('display','none');
+
+      $im.css({"left":"auto", "top":"auto"});
+      $im.animate({bottom:"0px", right:"0px"});
+    })
+
+    $('.im').on('click', '.im-maximization', function(){
+
+      var $im = $(this).parents('.im');
+
+      $im.find('.im-body').css('display','block');
+      $im.find('.im-footer').css('display','block');
+      $im.css({"left":"auto", "top":"auto"});
+      $im.animate({bottom:"0px", right:"0px"});
+    })
+
+    $('.im').draggable();
+
   })
 </script>
 </body>

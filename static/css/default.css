@@ -412,9 +412,9 @@ body {
 
 .im {
 	position: fixed;
-	top:10%;
-	left:30%;
 	z-index: 999999;
+	bottom: 0px;
+	right: 0px;
 }
 
 .im .im-header {
@@ -462,4 +462,16 @@ body {
 	padding: 5px 10px;
 	overflow: hidden;
 	height: 30px;
+}
+
+.im .im-tool {
+	float: right;
+	font-size: 26px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+
+.im .im-close, .im .im-minimize:hover {
+	text-shadow: 0 0 2px #369369;
 }
