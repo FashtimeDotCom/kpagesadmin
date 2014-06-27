@@ -537,8 +537,8 @@
     <div class="im-content">
 
       <div class="im-header">
-        <img src="" alt="江处长">
         <span class="name">江处长</span>
+        <span class="im-close">&times;</span>
       </div>
 
       <div class="im-body">
@@ -565,6 +565,7 @@
   </div>
 </div>
 <script src="static/js/jquery-1.10.2.min.js"></script>
+<script src="static/js/jquery-ui-1.10.3.full.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/kpages.js"></script>
 <script>
@@ -575,8 +576,14 @@
         console.log(text);
         var $self = $("<div class='chat-block self'><p class='chat-content'></p></div>");
         $self.find('.chat-content').text(text);
-        $('.im .im-body').append($self);        
+        $('.im .im-body').append($self);
 
+    });
+
+    $('.im').draggable();
+
+    $('.im .im-close').click(function(event) {
+      $(this).parents('.im').fadeOut();
     });
   })
 </script>
