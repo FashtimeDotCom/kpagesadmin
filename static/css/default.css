@@ -64,8 +64,9 @@ body {
 
 .pcontent {
 	margin-left: 240px;
-	background: #e4e7ea;
+	background: #f7f7f7;
 	min-height: 1000px;
+	padding: 8px;
 }
 
 .pright {
@@ -475,3 +476,51 @@ body {
 .im .im-close, .im .im-minimize:hover {
 	text-shadow: 0 0 2px #369369;
 }
+
+
+/*
+ * material UI
+ */
+
+ .btn {
+
+ }
+
+ /*默认使用z1的深度层级*/
+.btn, .panel {
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.15); 
+}
+
+ .z1 {
+ 	box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.15); 
+ }
+
+ .z2 {
+ 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16); 
+ }
+
+ .z3 {
+ 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19);
+ }
+ .z4 {
+ 	box-shadow: 0 14px 14px rgba(0, 0, 0, 0.25);
+ }
+
+ .z5 {
+ 	box-shadow: 0 19px 19px rgba(0, 0, 0, 0.3);
+ }
+
+ .btn-circle {
+ 	border-radius: 50%;
+ 	width: 60px;
+ 	height: 60px;
+ }
+
+ .btn-circle .fa{
+ 	font-size: 20px;
+ }
+
+ .panel {
+ 	background-color: #eee;
+ }
+
