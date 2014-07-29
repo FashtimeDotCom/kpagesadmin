@@ -314,7 +314,6 @@ body {
 	padding: 20px;
 }
 
-
 /** 右边栏样式 **/
 
 .pright,
@@ -410,6 +409,7 @@ body {
 	color: #ffffff;
 }
 
+/** im dialog 样式 **/
 .im {
 	position: fixed;
 	z-index: 999999;
@@ -464,12 +464,26 @@ body {
 	height: 30px;
 }
 
+.im .im-close {
+	float: right;
+	font-size: 21px;
+	line-height: 1;
+	color: #EEE;
+	text-shadow: 0 1px 0 #FFF;
+	filter: alpha(opacity=20);
+	cursor: pointer;
+}
+.im .im-close:hover {
+	text-shadow: 0px 0px 2px #FFF;
+}
 .im .im-tool {
 	float: right;
 	font-size: 26px;
 	cursor: pointer;
 	margin-right: 10px;
 }
+
+
 
 
 .im .im-close, .im .im-minimize:hover {
@@ -523,6 +537,7 @@ body {
  	background-color: #fff;
  }
 
+<<<<<<< HEAD
 .spin {
 	animation: spin 2s infinite linear;
 	-webkit-animation: spin 2s infinite linear;
@@ -568,4 +583,6 @@ body {
 	background-color: #eee;
 }
 
+=======
+>>>>>>> FETCH_HEAD
 
