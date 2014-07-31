@@ -537,7 +537,6 @@ body {
  	background-color: #fff;
  }
 
-<<<<<<< HEAD
 .spin {
 	animation: spin 2s infinite linear;
 	-webkit-animation: spin 2s infinite linear;
@@ -582,7 +581,4 @@ body {
 	z-index: 99999;
 	background-color: #eee;
 }
-
-=======
->>>>>>> FETCH_HEAD
 

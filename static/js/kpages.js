@@ -73,7 +73,7 @@ $(function(){
    });
 
    $('.chatuserlist li').click(function(event) {
-      
+    
    });
 
-})
+});
