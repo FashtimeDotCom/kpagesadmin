@@ -1,0 +1,1470 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'live' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'live', null ]
+6 verbose cache add name=undefined spec="live" args=["live",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'live',
+7 verbose parsed url   path: 'live',
+7 verbose parsed url   href: 'live' }
+8 silly lockFile 98aadb37-live live
+9 verbose lock live /Users/vitexy/.npm/98aadb37-live.lock
+10 silly lockFile 98aadb37-live live
+11 silly lockFile 98aadb37-live live
+12 verbose addNamed [ 'live', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e61dda6b-live live@
+15 verbose lock live@ /Users/vitexy/.npm/e61dda6b-live.lock
+16 silly addNameRange { name: 'live', range: '*', hasData: false }
+17 verbose url raw live
+18 verbose url resolving [ 'https://registry.npmjs.org/', './live' ]
+19 verbose url resolved https://registry.npmjs.org/live
+20 info trying registry request attempt 1 at 21:33:42
+21 http GET https://registry.npmjs.org/live
+22 http 200 https://registry.npmjs.org/live
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:42 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"7C2O3P9YPU2KUZB4T5INPXVK7"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     'content-length': '4461',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1408023222.580866,VS0,VE189',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'live', range: '*', hasData: true }
+25 silly addNameRange versions [ 'live', [ '0.0.1', '0.0.2', '0.0.3-2' ] ]
+26 verbose addNamed [ 'live', '0.0.3-2' ]
+27 verbose addNamed [ '0.0.3-2', '0.0.3-2' ]
+28 silly lockFile daf236e6-live-0-0-3-2 live@0.0.3-2
+29 verbose lock live@0.0.3-2 /Users/vitexy/.npm/daf236e6-live-0-0-3-2.lock
+30 silly lockFile f3886d5f--npmjs-org-live-live-0-0-3-2-tgz https://registry.npmjs.org/live/-/live-0.0.3-2.tgz
+31 verbose lock https://registry.npmjs.org/live/-/live-0.0.3-2.tgz /Users/vitexy/.npm/f3886d5f--npmjs-org-live-live-0-0-3-2-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/live/-/live-0.0.3-2.tgz',
+32 verbose addRemoteTarball   '35c0f97f2d36bd7648a767d815519e7c2fbb077e' ]
+33 info retry fetch attempt 1 at 21:33:43
+34 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/live/-/live-0.0.3-2.tgz
+35 http GET https://registry.npmjs.org/live/-/live-0.0.3-2.tgz
+36 http 200 https://registry.npmjs.org/live/-/live-0.0.3-2.tgz
+37 silly lockFile f3886d5f--npmjs-org-live-live-0-0-3-2-tgz https://registry.npmjs.org/live/-/live-0.0.3-2.tgz
+38 silly lockFile f3886d5f--npmjs-org-live-live-0-0-3-2-tgz https://registry.npmjs.org/live/-/live-0.0.3-2.tgz
+39 silly lockFile daf236e6-live-0-0-3-2 live@0.0.3-2
+40 silly lockFile daf236e6-live-0-0-3-2 live@0.0.3-2
+41 silly lockFile e61dda6b-live live@
+42 silly lockFile e61dda6b-live live@
+43 silly resolved [ { name: 'live',
+43 silly resolved     version: '0.0.3-2',
+43 silly resolved     dependencies:
+43 silly resolved      { 'connect-flash': '~0.1.0',
+43 silly resolved        colors: '~0.6.0-1',
+43 silly resolved        'express-validator': '~0.3.2',
+43 silly resolved        underscore: '~1.4.4',
+43 silly resolved        'socket.io': '~0.9.14',
+43 silly resolved        cookie: '0.0.5',
+43 silly resolved        async: '~0.2.6',
+43 silly resolved        'coffee-script': '~1.6.2',
+43 silly resolved        'passport-local': '~0.1.6',
+43 silly resolved        passport: '~0.1.16',
+43 silly resolved        jade: '~0.28.2',
+43 silly resolved        'passport-facebook': '~0.1.5',
+43 silly resolved        bcrypt: '~0.7.5',
+43 silly resolved        'live-assets': '~0.1.8',
+43 silly resolved        mincer: 'git://github.com/vjpr/mincer.git#latest',
+43 silly resolved        mongoose: '~3.6.3',
+43 silly resolved        'express-resource': '~1.0.0',
+43 silly resolved        'connect-redis': '~1.4.5',
+43 silly resolved        'redis-url': '~0.1.0',
+43 silly resolved        consolidate: '~0.9.1',
+43 silly resolved        connect: '~2.7.8',
+43 silly resolved        coffeecup: '~0.3.20',
+43 silly resolved        stylus: '~0.32.1',
+43 silly resolved        less: '*',
+43 silly resolved        'stack-trace': '0.0.6' },
+43 silly resolved     devDependencies: { onelog: 'git://github.com/vjpr/onelog.git' },
+43 silly resolved     readme: 'Everything in this folder should be generic.\n\nIf you need to make non-generic changes make them in a separate config file or\ncopy one of the files into the config directory and require it from\n`config/application.coffee`.\n\n## Requirements\n\n*This is very alpha. Some dependencies will be removed in the future.*\n\nIn the project this application is used in:\n\n`require(\'config\')` must resolve to a function that returns a dictionary containing configuration options.\n`require(\'config/logging\')` must resolve to a function.\n\nAll dependencies in `package.json` must be installed.\n',
+43 silly resolved     readmeFilename: 'README.md',
+43 silly resolved     description: 'Everything in this folder should be generic.',
+43 silly resolved     _id: 'live@0.0.3-2',
+43 silly resolved     dist:
+43 silly resolved      { shasum: '35c0f97f2d36bd7648a767d815519e7c2fbb077e',
+43 silly resolved        tarball: 'http://registry.npmjs.org/live/-/live-0.0.3-2.tgz' },
+43 silly resolved     _from: 'live@',
+43 silly resolved     _npmVersion: '1.2.19',
+43 silly resolved     _npmUser: { name: 'vaughan', email: 'vrouesnel@gmail.com' },
+43 silly resolved     maintainers: [ [Object] ],
+43 silly resolved     directories: {},
+43 silly resolved     _shasum: '35c0f97f2d36bd7648a767d815519e7c2fbb077e',
+43 silly resolved     _resolved: 'https://registry.npmjs.org/live/-/live-0.0.3-2.tgz' } ]
+44 info install live@0.0.3-2 into /Users/vitexy/Desktop/kpagesadmin
+45 info installOne live@0.0.3-2
+46 info /Users/vitexy/Desktop/kpagesadmin/node_modules/live unbuild
+47 verbose tar unpack /Users/vitexy/.npm/live/0.0.3-2/package.tgz
+48 silly lockFile 6b263bd0-op-kpagesadmin-node-modules-live tar:///Users/vitexy/Desktop/kpagesadmin/node_modules/live
+49 verbose lock tar:///Users/vitexy/Desktop/kpagesadmin/node_modules/live /Users/vitexy/.npm/6b263bd0-op-kpagesadmin-node-modules-live.lock
+50 silly lockFile 4461bee6-exy-npm-live-0-0-3-2-package-tgz tar:///Users/vitexy/.npm/live/0.0.3-2/package.tgz
+51 verbose lock tar:///Users/vitexy/.npm/live/0.0.3-2/package.tgz /Users/vitexy/.npm/4461bee6-exy-npm-live-0-0-3-2-package-tgz.lock
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm extractEntry index.coffee
+57 silly gunzTarPerm extractEntry auth/passportAuth.coffee
+58 silly gunzTarPerm extractEntry config.coffee
+59 silly gunzTarPerm extractEntry .idea/.name
+60 silly gunzTarPerm extractEntry .idea/compiler.xml
+61 silly gunzTarPerm extractEntry .idea/copyright/profiles_settings.xml
+62 silly gunzTarPerm extractEntry .idea/encodings.xml
+63 silly gunzTarPerm extractEntry .idea/misc.xml
+64 silly gunzTarPerm extractEntry .idea/modules.xml
+65 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+66 silly gunzTarPerm extractEntry .idea/vcs.xml
+67 silly gunzTarPerm extractEntry live.iml
+68 silly gunzTarPerm extractEntry liveAssets.coffee
+69 silly gunzTarPerm extractEntry logging.coffee
+70 silly gunzTarPerm extractEntry application.coffee
+71 silly gunzTarPerm extractEntry assets/icedCoffeeEngine.js
+72 silly gunzTarPerm extractEntry assets/coffeecupEngine.coffee
+73 silly gunzTarPerm extractEntry assets/jadeMultiEngine.coffee
+74 silly gunzTarPerm extractEntry sockets/socketsManager.coffee
+75 silly lockFile 6b263bd0-op-kpagesadmin-node-modules-live tar:///Users/vitexy/Desktop/kpagesadmin/node_modules/live
+76 silly lockFile 6b263bd0-op-kpagesadmin-node-modules-live tar:///Users/vitexy/Desktop/kpagesadmin/node_modules/live
+77 silly lockFile 4461bee6-exy-npm-live-0-0-3-2-package-tgz tar:///Users/vitexy/.npm/live/0.0.3-2/package.tgz
+78 silly lockFile 4461bee6-exy-npm-live-0-0-3-2-package-tgz tar:///Users/vitexy/.npm/live/0.0.3-2/package.tgz
+79 info preinstall live@0.0.3-2
+80 verbose readDependencies using package.json deps
+81 verbose readDependencies using package.json deps
+82 verbose cache add [ 'connect-flash@~0.1.0', null ]
+83 verbose cache add name=undefined spec="connect-flash@~0.1.0" args=["connect-flash@~0.1.0",null]
+84 verbose parsed url { protocol: null,
+84 verbose parsed url   slashes: null,
+84 verbose parsed url   auth: null,
+84 verbose parsed url   host: null,
+84 verbose parsed url   port: null,
+84 verbose parsed url   hostname: null,
+84 verbose parsed url   hash: null,
+84 verbose parsed url   search: null,
+84 verbose parsed url   query: null,
+84 verbose parsed url   pathname: 'connect-flash@~0.1.0',
+84 verbose parsed url   path: 'connect-flash@~0.1.0',
+84 verbose parsed url   href: 'connect-flash@~0.1.0' }
+85 verbose cache add [ 'colors@~0.6.0-1', null ]
+86 verbose cache add name=undefined spec="colors@~0.6.0-1" args=["colors@~0.6.0-1",null]
+87 verbose parsed url { protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: 'colors@~0.6.0-1',
+87 verbose parsed url   path: 'colors@~0.6.0-1',
+87 verbose parsed url   href: 'colors@~0.6.0-1' }
+88 verbose cache add name="connect-flash" spec="~0.1.0" args=["connect-flash","~0.1.0"]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: '~0.1.0',
+89 verbose parsed url   path: '~0.1.0',
+89 verbose parsed url   href: '~0.1.0' }
+90 verbose addNamed [ 'connect-flash', '~0.1.0' ]
+91 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+92 silly lockFile 42ae3d6b-connect-flash-0-1-0 connect-flash@~0.1.0
+93 verbose lock connect-flash@~0.1.0 /Users/vitexy/.npm/42ae3d6b-connect-flash-0-1-0.lock
+94 verbose cache add [ 'express-validator@~0.3.2', null ]
+95 verbose cache add name=undefined spec="express-validator@~0.3.2" args=["express-validator@~0.3.2",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'express-validator@~0.3.2',
+96 verbose parsed url   path: 'express-validator@~0.3.2',
+96 verbose parsed url   href: 'express-validator@~0.3.2' }
+97 verbose cache add name="colors" spec="~0.6.0-1" args=["colors","~0.6.0-1"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '~0.6.0-1',
+98 verbose parsed url   path: '~0.6.0-1',
+98 verbose parsed url   href: '~0.6.0-1' }
+99 verbose addNamed [ 'colors', '~0.6.0-1' ]
+100 verbose addNamed [ null, '>=0.6.0-1 <0.7.0-0' ]
+101 silly lockFile f29bff6b-colors-0-6-0-1 colors@~0.6.0-1
+102 verbose lock colors@~0.6.0-1 /Users/vitexy/.npm/f29bff6b-colors-0-6-0-1.lock
+103 verbose cache add name="express-validator" spec="~0.3.2" args=["express-validator","~0.3.2"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '~0.3.2',
+104 verbose parsed url   path: '~0.3.2',
+104 verbose parsed url   href: '~0.3.2' }
+105 verbose addNamed [ 'express-validator', '~0.3.2' ]
+106 verbose addNamed [ null, '>=0.3.2-0 <0.4.0-0' ]
+107 silly lockFile b2810089-express-validator-0-3-2 express-validator@~0.3.2
+108 verbose lock express-validator@~0.3.2 /Users/vitexy/.npm/b2810089-express-validator-0-3-2.lock
+109 verbose cache add [ 'underscore@~1.4.4', null ]
+110 verbose cache add name=undefined spec="underscore@~1.4.4" args=["underscore@~1.4.4",null]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: 'underscore@~1.4.4',
+111 verbose parsed url   path: 'underscore@~1.4.4',
+111 verbose parsed url   href: 'underscore@~1.4.4' }
+112 silly addNameRange { name: 'connect-flash',
+112 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+112 silly addNameRange   hasData: false }
+113 silly addNameRange { name: 'colors', range: '>=0.6.0-1 <0.7.0-0', hasData: false }
+114 verbose cache add name="underscore" spec="~1.4.4" args=["underscore","~1.4.4"]
+115 verbose parsed url { protocol: null,
+115 verbose parsed url   slashes: null,
+115 verbose parsed url   auth: null,
+115 verbose parsed url   host: null,
+115 verbose parsed url   port: null,
+115 verbose parsed url   hostname: null,
+115 verbose parsed url   hash: null,
+115 verbose parsed url   search: null,
+115 verbose parsed url   query: null,
+115 verbose parsed url   pathname: '~1.4.4',
+115 verbose parsed url   path: '~1.4.4',
+115 verbose parsed url   href: '~1.4.4' }
+116 verbose addNamed [ 'underscore', '~1.4.4' ]
+117 verbose addNamed [ null, '>=1.4.4-0 <1.5.0-0' ]
+118 silly lockFile 286a8917-underscore-1-4-4 underscore@~1.4.4
+119 verbose lock underscore@~1.4.4 /Users/vitexy/.npm/286a8917-underscore-1-4-4.lock
+120 verbose cache add [ 'socket.io@~0.9.14', null ]
+121 verbose cache add name=undefined spec="socket.io@~0.9.14" args=["socket.io@~0.9.14",null]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'socket.io@~0.9.14',
+122 verbose parsed url   path: 'socket.io@~0.9.14',
+122 verbose parsed url   href: 'socket.io@~0.9.14' }
+123 verbose url raw connect-flash
+124 verbose url resolving [ 'https://registry.npmjs.org/', './connect-flash' ]
+125 verbose url resolved https://registry.npmjs.org/connect-flash
+126 info trying registry request attempt 1 at 21:33:44
+127 http GET https://registry.npmjs.org/connect-flash
+128 verbose cache add [ 'async@~0.2.6', null ]
+129 verbose cache add name=undefined spec="async@~0.2.6" args=["async@~0.2.6",null]
+130 verbose parsed url { protocol: null,
+130 verbose parsed url   slashes: null,
+130 verbose parsed url   auth: null,
+130 verbose parsed url   host: null,
+130 verbose parsed url   port: null,
+130 verbose parsed url   hostname: null,
+130 verbose parsed url   hash: null,
+130 verbose parsed url   search: null,
+130 verbose parsed url   query: null,
+130 verbose parsed url   pathname: 'async@~0.2.6',
+130 verbose parsed url   path: 'async@~0.2.6',
+130 verbose parsed url   href: 'async@~0.2.6' }
+131 verbose cache add [ 'cookie@0.0.5', null ]
+132 verbose cache add name=undefined spec="cookie@0.0.5" args=["cookie@0.0.5",null]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: 'cookie@0.0.5',
+133 verbose parsed url   path: 'cookie@0.0.5',
+133 verbose parsed url   href: 'cookie@0.0.5' }
+134 verbose cache add [ 'coffee-script@~1.6.2', null ]
+135 verbose cache add name=undefined spec="coffee-script@~1.6.2" args=["coffee-script@~1.6.2",null]
+136 verbose parsed url { protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: 'coffee-script@~1.6.2',
+136 verbose parsed url   path: 'coffee-script@~1.6.2',
+136 verbose parsed url   href: 'coffee-script@~1.6.2' }
+137 verbose cache add [ 'passport-local@~0.1.6', null ]
+138 verbose cache add name=undefined spec="passport-local@~0.1.6" args=["passport-local@~0.1.6",null]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: 'passport-local@~0.1.6',
+139 verbose parsed url   path: 'passport-local@~0.1.6',
+139 verbose parsed url   href: 'passport-local@~0.1.6' }
+140 verbose cache add [ 'passport@~0.1.16', null ]
+141 verbose cache add name=undefined spec="passport@~0.1.16" args=["passport@~0.1.16",null]
+142 verbose parsed url { protocol: null,
+142 verbose parsed url   slashes: null,
+142 verbose parsed url   auth: null,
+142 verbose parsed url   host: null,
+142 verbose parsed url   port: null,
+142 verbose parsed url   hostname: null,
+142 verbose parsed url   hash: null,
+142 verbose parsed url   search: null,
+142 verbose parsed url   query: null,
+142 verbose parsed url   pathname: 'passport@~0.1.16',
+142 verbose parsed url   path: 'passport@~0.1.16',
+142 verbose parsed url   href: 'passport@~0.1.16' }
+143 verbose cache add [ 'jade@~0.28.2', null ]
+144 verbose cache add name=undefined spec="jade@~0.28.2" args=["jade@~0.28.2",null]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: 'jade@~0.28.2',
+145 verbose parsed url   path: 'jade@~0.28.2',
+145 verbose parsed url   href: 'jade@~0.28.2' }
+146 verbose cache add [ 'passport-facebook@~0.1.5', null ]
+147 verbose cache add name=undefined spec="passport-facebook@~0.1.5" args=["passport-facebook@~0.1.5",null]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: 'passport-facebook@~0.1.5',
+148 verbose parsed url   path: 'passport-facebook@~0.1.5',
+148 verbose parsed url   href: 'passport-facebook@~0.1.5' }
+149 verbose cache add [ 'bcrypt@~0.7.5', null ]
+150 verbose cache add name=undefined spec="bcrypt@~0.7.5" args=["bcrypt@~0.7.5",null]
+151 verbose parsed url { protocol: null,
+151 verbose parsed url   slashes: null,
+151 verbose parsed url   auth: null,
+151 verbose parsed url   host: null,
+151 verbose parsed url   port: null,
+151 verbose parsed url   hostname: null,
+151 verbose parsed url   hash: null,
+151 verbose parsed url   search: null,
+151 verbose parsed url   query: null,
+151 verbose parsed url   pathname: 'bcrypt@~0.7.5',
+151 verbose parsed url   path: 'bcrypt@~0.7.5',
+151 verbose parsed url   href: 'bcrypt@~0.7.5' }
+152 verbose cache add [ 'live-assets@~0.1.8', null ]
+153 verbose cache add name=undefined spec="live-assets@~0.1.8" args=["live-assets@~0.1.8",null]
+154 verbose parsed url { protocol: null,
+154 verbose parsed url   slashes: null,
+154 verbose parsed url   auth: null,
+154 verbose parsed url   host: null,
+154 verbose parsed url   port: null,
+154 verbose parsed url   hostname: null,
+154 verbose parsed url   hash: null,
+154 verbose parsed url   search: null,
+154 verbose parsed url   query: null,
+154 verbose parsed url   pathname: 'live-assets@~0.1.8',
+154 verbose parsed url   path: 'live-assets@~0.1.8',
+154 verbose parsed url   href: 'live-assets@~0.1.8' }
+155 verbose cache add [ 'mincer@git://github.com/vjpr/mincer.git#latest', null ]
+156 verbose cache add name=undefined spec="mincer@git://github.com/vjpr/mincer.git#latest" args=["mincer@git://github.com/vjpr/mincer.git#latest",null]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: '#latest',
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: 'mincer@git://github.com/vjpr/mincer.git',
+157 verbose parsed url   path: 'mincer@git://github.com/vjpr/mincer.git',
+157 verbose parsed url   href: 'mincer@git://github.com/vjpr/mincer.git#latest' }
+158 verbose cache add [ 'mongoose@~3.6.3', null ]
+159 verbose cache add name=undefined spec="mongoose@~3.6.3" args=["mongoose@~3.6.3",null]
+160 verbose parsed url { protocol: null,
+160 verbose parsed url   slashes: null,
+160 verbose parsed url   auth: null,
+160 verbose parsed url   host: null,
+160 verbose parsed url   port: null,
+160 verbose parsed url   hostname: null,
+160 verbose parsed url   hash: null,
+160 verbose parsed url   search: null,
+160 verbose parsed url   query: null,
+160 verbose parsed url   pathname: 'mongoose@~3.6.3',
+160 verbose parsed url   path: 'mongoose@~3.6.3',
+160 verbose parsed url   href: 'mongoose@~3.6.3' }
+161 verbose cache add [ 'express-resource@~1.0.0', null ]
+162 verbose cache add name=undefined spec="express-resource@~1.0.0" args=["express-resource@~1.0.0",null]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: 'express-resource@~1.0.0',
+163 verbose parsed url   path: 'express-resource@~1.0.0',
+163 verbose parsed url   href: 'express-resource@~1.0.0' }
+164 verbose cache add [ 'connect-redis@~1.4.5', null ]
+165 verbose cache add name=undefined spec="connect-redis@~1.4.5" args=["connect-redis@~1.4.5",null]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: 'connect-redis@~1.4.5',
+166 verbose parsed url   path: 'connect-redis@~1.4.5',
+166 verbose parsed url   href: 'connect-redis@~1.4.5' }
+167 verbose cache add [ 'redis-url@~0.1.0', null ]
+168 verbose cache add name=undefined spec="redis-url@~0.1.0" args=["redis-url@~0.1.0",null]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: 'redis-url@~0.1.0',
+169 verbose parsed url   path: 'redis-url@~0.1.0',
+169 verbose parsed url   href: 'redis-url@~0.1.0' }
+170 verbose cache add [ 'consolidate@~0.9.1', null ]
+171 verbose cache add name=undefined spec="consolidate@~0.9.1" args=["consolidate@~0.9.1",null]
+172 verbose parsed url { protocol: null,
+172 verbose parsed url   slashes: null,
+172 verbose parsed url   auth: null,
+172 verbose parsed url   host: null,
+172 verbose parsed url   port: null,
+172 verbose parsed url   hostname: null,
+172 verbose parsed url   hash: null,
+172 verbose parsed url   search: null,
+172 verbose parsed url   query: null,
+172 verbose parsed url   pathname: 'consolidate@~0.9.1',
+172 verbose parsed url   path: 'consolidate@~0.9.1',
+172 verbose parsed url   href: 'consolidate@~0.9.1' }
+173 verbose cache add [ 'connect@~2.7.8', null ]
+174 verbose cache add name=undefined spec="connect@~2.7.8" args=["connect@~2.7.8",null]
+175 verbose parsed url { protocol: null,
+175 verbose parsed url   slashes: null,
+175 verbose parsed url   auth: null,
+175 verbose parsed url   host: null,
+175 verbose parsed url   port: null,
+175 verbose parsed url   hostname: null,
+175 verbose parsed url   hash: null,
+175 verbose parsed url   search: null,
+175 verbose parsed url   query: null,
+175 verbose parsed url   pathname: 'connect@~2.7.8',
+175 verbose parsed url   path: 'connect@~2.7.8',
+175 verbose parsed url   href: 'connect@~2.7.8' }
+176 verbose cache add name="socket.io" spec="~0.9.14" args=["socket.io","~0.9.14"]
+177 verbose parsed url { protocol: null,
+177 verbose parsed url   slashes: null,
+177 verbose parsed url   auth: null,
+177 verbose parsed url   host: null,
+177 verbose parsed url   port: null,
+177 verbose parsed url   hostname: null,
+177 verbose parsed url   hash: null,
+177 verbose parsed url   search: null,
+177 verbose parsed url   query: null,
+177 verbose parsed url   pathname: '~0.9.14',
+177 verbose parsed url   path: '~0.9.14',
+177 verbose parsed url   href: '~0.9.14' }
+178 verbose addNamed [ 'socket.io', '~0.9.14' ]
+179 verbose addNamed [ null, '>=0.9.14-0 <0.10.0-0' ]
+180 silly lockFile f8d595fd-socket-io-0-9-14 socket.io@~0.9.14
+181 verbose lock socket.io@~0.9.14 /Users/vitexy/.npm/f8d595fd-socket-io-0-9-14.lock
+182 silly addNameRange { name: 'express-validator',
+182 silly addNameRange   range: '>=0.3.2-0 <0.4.0-0',
+182 silly addNameRange   hasData: false }
+183 silly addNameRange { name: 'underscore',
+183 silly addNameRange   range: '>=1.4.4-0 <1.5.0-0',
+183 silly addNameRange   hasData: false }
+184 verbose cache add name="async" spec="~0.2.6" args=["async","~0.2.6"]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: '~0.2.6',
+185 verbose parsed url   path: '~0.2.6',
+185 verbose parsed url   href: '~0.2.6' }
+186 verbose addNamed [ 'async', '~0.2.6' ]
+187 verbose addNamed [ null, '>=0.2.6-0 <0.3.0-0' ]
+188 silly lockFile e00b1d77-async-0-2-6 async@~0.2.6
+189 verbose lock async@~0.2.6 /Users/vitexy/.npm/e00b1d77-async-0-2-6.lock
+190 verbose cache add name="cookie" spec="0.0.5" args=["cookie","0.0.5"]
+191 verbose parsed url { protocol: null,
+191 verbose parsed url   slashes: null,
+191 verbose parsed url   auth: null,
+191 verbose parsed url   host: null,
+191 verbose parsed url   port: null,
+191 verbose parsed url   hostname: null,
+191 verbose parsed url   hash: null,
+191 verbose parsed url   search: null,
+191 verbose parsed url   query: null,
+191 verbose parsed url   pathname: '0.0.5',
+191 verbose parsed url   path: '0.0.5',
+191 verbose parsed url   href: '0.0.5' }
+192 verbose addNamed [ 'cookie', '0.0.5' ]
+193 verbose addNamed [ '0.0.5', '0.0.5' ]
+194 silly lockFile fe08ced7-cookie-0-0-5 cookie@0.0.5
+195 verbose lock cookie@0.0.5 /Users/vitexy/.npm/fe08ced7-cookie-0-0-5.lock
+196 verbose cache add name="coffee-script" spec="~1.6.2" args=["coffee-script","~1.6.2"]
+197 verbose parsed url { protocol: null,
+197 verbose parsed url   slashes: null,
+197 verbose parsed url   auth: null,
+197 verbose parsed url   host: null,
+197 verbose parsed url   port: null,
+197 verbose parsed url   hostname: null,
+197 verbose parsed url   hash: null,
+197 verbose parsed url   search: null,
+197 verbose parsed url   query: null,
+197 verbose parsed url   pathname: '~1.6.2',
+197 verbose parsed url   path: '~1.6.2',
+197 verbose parsed url   href: '~1.6.2' }
+198 verbose addNamed [ 'coffee-script', '~1.6.2' ]
+199 verbose addNamed [ null, '>=1.6.2-0 <1.7.0-0' ]
+200 silly lockFile 93470bfc-coffee-script-1-6-2 coffee-script@~1.6.2
+201 verbose lock coffee-script@~1.6.2 /Users/vitexy/.npm/93470bfc-coffee-script-1-6-2.lock
+202 verbose cache add name="passport-local" spec="~0.1.6" args=["passport-local","~0.1.6"]
+203 verbose parsed url { protocol: null,
+203 verbose parsed url   slashes: null,
+203 verbose parsed url   auth: null,
+203 verbose parsed url   host: null,
+203 verbose parsed url   port: null,
+203 verbose parsed url   hostname: null,
+203 verbose parsed url   hash: null,
+203 verbose parsed url   search: null,
+203 verbose parsed url   query: null,
+203 verbose parsed url   pathname: '~0.1.6',
+203 verbose parsed url   path: '~0.1.6',
+203 verbose parsed url   href: '~0.1.6' }
+204 verbose addNamed [ 'passport-local', '~0.1.6' ]
+205 verbose addNamed [ null, '>=0.1.6-0 <0.2.0-0' ]
+206 silly lockFile 1de19954-passport-local-0-1-6 passport-local@~0.1.6
+207 verbose lock passport-local@~0.1.6 /Users/vitexy/.npm/1de19954-passport-local-0-1-6.lock
+208 verbose cache add name="passport" spec="~0.1.16" args=["passport","~0.1.16"]
+209 verbose parsed url { protocol: null,
+209 verbose parsed url   slashes: null,
+209 verbose parsed url   auth: null,
+209 verbose parsed url   host: null,
+209 verbose parsed url   port: null,
+209 verbose parsed url   hostname: null,
+209 verbose parsed url   hash: null,
+209 verbose parsed url   search: null,
+209 verbose parsed url   query: null,
+209 verbose parsed url   pathname: '~0.1.16',
+209 verbose parsed url   path: '~0.1.16',
+209 verbose parsed url   href: '~0.1.16' }
+210 verbose addNamed [ 'passport', '~0.1.16' ]
+211 verbose addNamed [ null, '>=0.1.16-0 <0.2.0-0' ]
+212 silly lockFile 8cac25f0-passport-0-1-16 passport@~0.1.16
+213 verbose lock passport@~0.1.16 /Users/vitexy/.npm/8cac25f0-passport-0-1-16.lock
+214 verbose cache add name="jade" spec="~0.28.2" args=["jade","~0.28.2"]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: '~0.28.2',
+215 verbose parsed url   path: '~0.28.2',
+215 verbose parsed url   href: '~0.28.2' }
+216 verbose addNamed [ 'jade', '~0.28.2' ]
+217 verbose addNamed [ null, '>=0.28.2-0 <0.29.0-0' ]
+218 silly lockFile 9dcaf9c7-jade-0-28-2 jade@~0.28.2
+219 verbose lock jade@~0.28.2 /Users/vitexy/.npm/9dcaf9c7-jade-0-28-2.lock
+220 verbose cache add name="passport-facebook" spec="~0.1.5" args=["passport-facebook","~0.1.5"]
+221 verbose parsed url { protocol: null,
+221 verbose parsed url   slashes: null,
+221 verbose parsed url   auth: null,
+221 verbose parsed url   host: null,
+221 verbose parsed url   port: null,
+221 verbose parsed url   hostname: null,
+221 verbose parsed url   hash: null,
+221 verbose parsed url   search: null,
+221 verbose parsed url   query: null,
+221 verbose parsed url   pathname: '~0.1.5',
+221 verbose parsed url   path: '~0.1.5',
+221 verbose parsed url   href: '~0.1.5' }
+222 verbose addNamed [ 'passport-facebook', '~0.1.5' ]
+223 verbose addNamed [ null, '>=0.1.5-0 <0.2.0-0' ]
+224 silly lockFile f666f1fc-passport-facebook-0-1-5 passport-facebook@~0.1.5
+225 verbose lock passport-facebook@~0.1.5 /Users/vitexy/.npm/f666f1fc-passport-facebook-0-1-5.lock
+226 verbose cache add name="bcrypt" spec="~0.7.5" args=["bcrypt","~0.7.5"]
+227 verbose parsed url { protocol: null,
+227 verbose parsed url   slashes: null,
+227 verbose parsed url   auth: null,
+227 verbose parsed url   host: null,
+227 verbose parsed url   port: null,
+227 verbose parsed url   hostname: null,
+227 verbose parsed url   hash: null,
+227 verbose parsed url   search: null,
+227 verbose parsed url   query: null,
+227 verbose parsed url   pathname: '~0.7.5',
+227 verbose parsed url   path: '~0.7.5',
+227 verbose parsed url   href: '~0.7.5' }
+228 verbose addNamed [ 'bcrypt', '~0.7.5' ]
+229 verbose addNamed [ null, '>=0.7.5-0 <0.8.0-0' ]
+230 silly lockFile d803c0fe-bcrypt-0-7-5 bcrypt@~0.7.5
+231 verbose lock bcrypt@~0.7.5 /Users/vitexy/.npm/d803c0fe-bcrypt-0-7-5.lock
+232 verbose cache add name="live-assets" spec="~0.1.8" args=["live-assets","~0.1.8"]
+233 verbose parsed url { protocol: null,
+233 verbose parsed url   slashes: null,
+233 verbose parsed url   auth: null,
+233 verbose parsed url   host: null,
+233 verbose parsed url   port: null,
+233 verbose parsed url   hostname: null,
+233 verbose parsed url   hash: null,
+233 verbose parsed url   search: null,
+233 verbose parsed url   query: null,
+233 verbose parsed url   pathname: '~0.1.8',
+233 verbose parsed url   path: '~0.1.8',
+233 verbose parsed url   href: '~0.1.8' }
+234 verbose addNamed [ 'live-assets', '~0.1.8' ]
+235 verbose addNamed [ null, '>=0.1.8-0 <0.2.0-0' ]
+236 silly lockFile 4afe0f25-live-assets-0-1-8 live-assets@~0.1.8
+237 verbose lock live-assets@~0.1.8 /Users/vitexy/.npm/4afe0f25-live-assets-0-1-8.lock
+238 verbose cache add name="mincer" spec="git://github.com/vjpr/mincer.git#latest" args=["mincer","git://github.com/vjpr/mincer.git#latest"]
+239 verbose parsed url { protocol: 'git:',
+239 verbose parsed url   slashes: true,
+239 verbose parsed url   auth: null,
+239 verbose parsed url   host: 'github.com',
+239 verbose parsed url   port: null,
+239 verbose parsed url   hostname: 'github.com',
+239 verbose parsed url   hash: '#latest',
+239 verbose parsed url   search: null,
+239 verbose parsed url   query: null,
+239 verbose parsed url   pathname: '/vjpr/mincer.git',
+239 verbose parsed url   path: '/vjpr/mincer.git',
+239 verbose parsed url   href: 'git://github.com/vjpr/mincer.git#latest' }
+240 silly lockFile af21fb93-git-github-com-vjpr-mincer-git git://github.com/vjpr/mincer.git
+241 verbose lock git://github.com/vjpr/mincer.git /Users/vitexy/.npm/af21fb93-git-github-com-vjpr-mincer-git.lock
+242 verbose cache add name="mongoose" spec="~3.6.3" args=["mongoose","~3.6.3"]
+243 verbose parsed url { protocol: null,
+243 verbose parsed url   slashes: null,
+243 verbose parsed url   auth: null,
+243 verbose parsed url   host: null,
+243 verbose parsed url   port: null,
+243 verbose parsed url   hostname: null,
+243 verbose parsed url   hash: null,
+243 verbose parsed url   search: null,
+243 verbose parsed url   query: null,
+243 verbose parsed url   pathname: '~3.6.3',
+243 verbose parsed url   path: '~3.6.3',
+243 verbose parsed url   href: '~3.6.3' }
+244 verbose addNamed [ 'mongoose', '~3.6.3' ]
+245 verbose addNamed [ null, '>=3.6.3-0 <3.7.0-0' ]
+246 silly lockFile 8e5f92bc-mongoose-3-6-3 mongoose@~3.6.3
+247 verbose lock mongoose@~3.6.3 /Users/vitexy/.npm/8e5f92bc-mongoose-3-6-3.lock
+248 verbose cache add name="express-resource" spec="~1.0.0" args=["express-resource","~1.0.0"]
+249 verbose parsed url { protocol: null,
+249 verbose parsed url   slashes: null,
+249 verbose parsed url   auth: null,
+249 verbose parsed url   host: null,
+249 verbose parsed url   port: null,
+249 verbose parsed url   hostname: null,
+249 verbose parsed url   hash: null,
+249 verbose parsed url   search: null,
+249 verbose parsed url   query: null,
+249 verbose parsed url   pathname: '~1.0.0',
+249 verbose parsed url   path: '~1.0.0',
+249 verbose parsed url   href: '~1.0.0' }
+250 verbose addNamed [ 'express-resource', '~1.0.0' ]
+251 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+252 silly lockFile 235c1a6b-express-resource-1-0-0 express-resource@~1.0.0
+253 verbose lock express-resource@~1.0.0 /Users/vitexy/.npm/235c1a6b-express-resource-1-0-0.lock
+254 verbose cache add name="connect-redis" spec="~1.4.5" args=["connect-redis","~1.4.5"]
+255 verbose parsed url { protocol: null,
+255 verbose parsed url   slashes: null,
+255 verbose parsed url   auth: null,
+255 verbose parsed url   host: null,
+255 verbose parsed url   port: null,
+255 verbose parsed url   hostname: null,
+255 verbose parsed url   hash: null,
+255 verbose parsed url   search: null,
+255 verbose parsed url   query: null,
+255 verbose parsed url   pathname: '~1.4.5',
+255 verbose parsed url   path: '~1.4.5',
+255 verbose parsed url   href: '~1.4.5' }
+256 verbose addNamed [ 'connect-redis', '~1.4.5' ]
+257 verbose addNamed [ null, '>=1.4.5-0 <1.5.0-0' ]
+258 silly lockFile 5a7b441d-connect-redis-1-4-5 connect-redis@~1.4.5
+259 verbose lock connect-redis@~1.4.5 /Users/vitexy/.npm/5a7b441d-connect-redis-1-4-5.lock
+260 verbose cache add name="redis-url" spec="~0.1.0" args=["redis-url","~0.1.0"]
+261 verbose parsed url { protocol: null,
+261 verbose parsed url   slashes: null,
+261 verbose parsed url   auth: null,
+261 verbose parsed url   host: null,
+261 verbose parsed url   port: null,
+261 verbose parsed url   hostname: null,
+261 verbose parsed url   hash: null,
+261 verbose parsed url   search: null,
+261 verbose parsed url   query: null,
+261 verbose parsed url   pathname: '~0.1.0',
+261 verbose parsed url   path: '~0.1.0',
+261 verbose parsed url   href: '~0.1.0' }
+262 verbose addNamed [ 'redis-url', '~0.1.0' ]
+263 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+264 silly lockFile 22432039-redis-url-0-1-0 redis-url@~0.1.0
+265 verbose lock redis-url@~0.1.0 /Users/vitexy/.npm/22432039-redis-url-0-1-0.lock
+266 verbose cache add name="consolidate" spec="~0.9.1" args=["consolidate","~0.9.1"]
+267 verbose parsed url { protocol: null,
+267 verbose parsed url   slashes: null,
+267 verbose parsed url   auth: null,
+267 verbose parsed url   host: null,
+267 verbose parsed url   port: null,
+267 verbose parsed url   hostname: null,
+267 verbose parsed url   hash: null,
+267 verbose parsed url   search: null,
+267 verbose parsed url   query: null,
+267 verbose parsed url   pathname: '~0.9.1',
+267 verbose parsed url   path: '~0.9.1',
+267 verbose parsed url   href: '~0.9.1' }
+268 verbose addNamed [ 'consolidate', '~0.9.1' ]
+269 verbose addNamed [ null, '>=0.9.1-0 <0.10.0-0' ]
+270 silly lockFile 25e694a9-consolidate-0-9-1 consolidate@~0.9.1
+271 verbose lock consolidate@~0.9.1 /Users/vitexy/.npm/25e694a9-consolidate-0-9-1.lock
+272 verbose cache add [ 'coffeecup@~0.3.20', null ]
+273 verbose cache add name=undefined spec="coffeecup@~0.3.20" args=["coffeecup@~0.3.20",null]
+274 verbose parsed url { protocol: null,
+274 verbose parsed url   slashes: null,
+274 verbose parsed url   auth: null,
+274 verbose parsed url   host: null,
+274 verbose parsed url   port: null,
+274 verbose parsed url   hostname: null,
+274 verbose parsed url   hash: null,
+274 verbose parsed url   search: null,
+274 verbose parsed url   query: null,
+274 verbose parsed url   pathname: 'coffeecup@~0.3.20',
+274 verbose parsed url   path: 'coffeecup@~0.3.20',
+274 verbose parsed url   href: 'coffeecup@~0.3.20' }
+275 verbose cache add [ 'stylus@~0.32.1', null ]
+276 verbose cache add name=undefined spec="stylus@~0.32.1" args=["stylus@~0.32.1",null]
+277 verbose parsed url { protocol: null,
+277 verbose parsed url   slashes: null,
+277 verbose parsed url   auth: null,
+277 verbose parsed url   host: null,
+277 verbose parsed url   port: null,
+277 verbose parsed url   hostname: null,
+277 verbose parsed url   hash: null,
+277 verbose parsed url   search: null,
+277 verbose parsed url   query: null,
+277 verbose parsed url   pathname: 'stylus@~0.32.1',
+277 verbose parsed url   path: 'stylus@~0.32.1',
+277 verbose parsed url   href: 'stylus@~0.32.1' }
+278 verbose cache add [ 'less@*', null ]
+279 verbose cache add name=undefined spec="less@*" args=["less@*",null]
+280 verbose parsed url { protocol: null,
+280 verbose parsed url   slashes: null,
+280 verbose parsed url   auth: null,
+280 verbose parsed url   host: null,
+280 verbose parsed url   port: null,
+280 verbose parsed url   hostname: null,
+280 verbose parsed url   hash: null,
+280 verbose parsed url   search: null,
+280 verbose parsed url   query: null,
+280 verbose parsed url   pathname: 'less@*',
+280 verbose parsed url   path: 'less@*',
+280 verbose parsed url   href: 'less@*' }
+281 verbose cache add [ 'stack-trace@0.0.6', null ]
+282 verbose cache add name=undefined spec="stack-trace@0.0.6" args=["stack-trace@0.0.6",null]
+283 verbose parsed url { protocol: null,
+283 verbose parsed url   slashes: null,
+283 verbose parsed url   auth: null,
+283 verbose parsed url   host: null,
+283 verbose parsed url   port: null,
+283 verbose parsed url   hostname: null,
+283 verbose parsed url   hash: null,
+283 verbose parsed url   search: null,
+283 verbose parsed url   query: null,
+283 verbose parsed url   pathname: 'stack-trace@0.0.6',
+283 verbose parsed url   path: 'stack-trace@0.0.6',
+283 verbose parsed url   href: 'stack-trace@0.0.6' }
+284 verbose cache add name="connect" spec="~2.7.8" args=["connect","~2.7.8"]
+285 verbose parsed url { protocol: null,
+285 verbose parsed url   slashes: null,
+285 verbose parsed url   auth: null,
+285 verbose parsed url   host: null,
+285 verbose parsed url   port: null,
+285 verbose parsed url   hostname: null,
+285 verbose parsed url   hash: null,
+285 verbose parsed url   search: null,
+285 verbose parsed url   query: null,
+285 verbose parsed url   pathname: '~2.7.8',
+285 verbose parsed url   path: '~2.7.8',
+285 verbose parsed url   href: '~2.7.8' }
+286 verbose addNamed [ 'connect', '~2.7.8' ]
+287 verbose addNamed [ null, '>=2.7.8-0 <2.8.0-0' ]
+288 silly lockFile 9d7f5e9d-connect-2-7-8 connect@~2.7.8
+289 verbose lock connect@~2.7.8 /Users/vitexy/.npm/9d7f5e9d-connect-2-7-8.lock
+290 verbose url raw express-validator
+291 verbose url resolving [ 'https://registry.npmjs.org/', './express-validator' ]
+292 verbose url resolved https://registry.npmjs.org/express-validator
+293 info trying registry request attempt 1 at 21:33:44
+294 http GET https://registry.npmjs.org/express-validator
+295 verbose cache add name="coffeecup" spec="~0.3.20" args=["coffeecup","~0.3.20"]
+296 verbose parsed url { protocol: null,
+296 verbose parsed url   slashes: null,
+296 verbose parsed url   auth: null,
+296 verbose parsed url   host: null,
+296 verbose parsed url   port: null,
+296 verbose parsed url   hostname: null,
+296 verbose parsed url   hash: null,
+296 verbose parsed url   search: null,
+296 verbose parsed url   query: null,
+296 verbose parsed url   pathname: '~0.3.20',
+296 verbose parsed url   path: '~0.3.20',
+296 verbose parsed url   href: '~0.3.20' }
+297 verbose addNamed [ 'coffeecup', '~0.3.20' ]
+298 verbose addNamed [ null, '>=0.3.20-0 <0.4.0-0' ]
+299 silly lockFile ff2c5b4c-coffeecup-0-3-20 coffeecup@~0.3.20
+300 verbose lock coffeecup@~0.3.20 /Users/vitexy/.npm/ff2c5b4c-coffeecup-0-3-20.lock
+301 verbose cache add name="stylus" spec="~0.32.1" args=["stylus","~0.32.1"]
+302 verbose parsed url { protocol: null,
+302 verbose parsed url   slashes: null,
+302 verbose parsed url   auth: null,
+302 verbose parsed url   host: null,
+302 verbose parsed url   port: null,
+302 verbose parsed url   hostname: null,
+302 verbose parsed url   hash: null,
+302 verbose parsed url   search: null,
+302 verbose parsed url   query: null,
+302 verbose parsed url   pathname: '~0.32.1',
+302 verbose parsed url   path: '~0.32.1',
+302 verbose parsed url   href: '~0.32.1' }
+303 verbose addNamed [ 'stylus', '~0.32.1' ]
+304 verbose addNamed [ null, '>=0.32.1-0 <0.33.0-0' ]
+305 silly lockFile cdf76903-stylus-0-32-1 stylus@~0.32.1
+306 verbose lock stylus@~0.32.1 /Users/vitexy/.npm/cdf76903-stylus-0-32-1.lock
+307 verbose cache add name="less" spec="*" args=["less","*"]
+308 verbose parsed url { protocol: null,
+308 verbose parsed url   slashes: null,
+308 verbose parsed url   auth: null,
+308 verbose parsed url   host: null,
+308 verbose parsed url   port: null,
+308 verbose parsed url   hostname: null,
+308 verbose parsed url   hash: null,
+308 verbose parsed url   search: null,
+308 verbose parsed url   query: null,
+308 verbose parsed url   pathname: '*',
+308 verbose parsed url   path: '*',
+308 verbose parsed url   href: '*' }
+309 verbose addNamed [ 'less', '*' ]
+310 verbose addNamed [ null, '*' ]
+311 silly lockFile 3b72b43b-less less@*
+312 verbose lock less@* /Users/vitexy/.npm/3b72b43b-less.lock
+313 verbose cache add name="stack-trace" spec="0.0.6" args=["stack-trace","0.0.6"]
+314 verbose parsed url { protocol: null,
+314 verbose parsed url   slashes: null,
+314 verbose parsed url   auth: null,
+314 verbose parsed url   host: null,
+314 verbose parsed url   port: null,
+314 verbose parsed url   hostname: null,
+314 verbose parsed url   hash: null,
+314 verbose parsed url   search: null,
+314 verbose parsed url   query: null,
+314 verbose parsed url   pathname: '0.0.6',
+314 verbose parsed url   path: '0.0.6',
+314 verbose parsed url   href: '0.0.6' }
+315 verbose addNamed [ 'stack-trace', '0.0.6' ]
+316 verbose addNamed [ '0.0.6', '0.0.6' ]
+317 silly lockFile cdeb4bad-stack-trace-0-0-6 stack-trace@0.0.6
+318 verbose lock stack-trace@0.0.6 /Users/vitexy/.npm/cdeb4bad-stack-trace-0-0-6.lock
+319 silly addNameRange { name: 'socket.io',
+319 silly addNameRange   range: '>=0.9.14-0 <0.10.0-0',
+319 silly addNameRange   hasData: false }
+320 silly addNameRange { name: 'async', range: '>=0.2.6-0 <0.3.0-0', hasData: false }
+321 silly addNameRange { name: 'coffee-script',
+321 silly addNameRange   range: '>=1.6.2-0 <1.7.0-0',
+321 silly addNameRange   hasData: false }
+322 silly addNameRange { name: 'passport-local',
+322 silly addNameRange   range: '>=0.1.6-0 <0.2.0-0',
+322 silly addNameRange   hasData: false }
+323 silly addNameRange { name: 'passport',
+323 silly addNameRange   range: '>=0.1.16-0 <0.2.0-0',
+323 silly addNameRange   hasData: false }
+324 silly addNameRange { name: 'jade', range: '>=0.28.2-0 <0.29.0-0', hasData: false }
+325 silly addNameRange { name: 'passport-facebook',
+325 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+325 silly addNameRange   hasData: false }
+326 silly addNameRange { name: 'bcrypt', range: '>=0.7.5-0 <0.8.0-0', hasData: false }
+327 silly addNameRange { name: 'live-assets',
+327 silly addNameRange   range: '>=0.1.8-0 <0.2.0-0',
+327 silly addNameRange   hasData: false }
+328 verbose addRemoteGit [ 'git://github.com/vjpr/mincer.git', 'latest' ]
+329 silly addNameRange { name: 'mongoose', range: '>=3.6.3-0 <3.7.0-0', hasData: false }
+330 silly addNameRange { name: 'express-resource',
+330 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+330 silly addNameRange   hasData: false }
+331 silly addNameRange { name: 'connect-redis',
+331 silly addNameRange   range: '>=1.4.5-0 <1.5.0-0',
+331 silly addNameRange   hasData: false }
+332 silly addNameRange { name: 'redis-url',
+332 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+332 silly addNameRange   hasData: false }
+333 silly addNameRange { name: 'consolidate',
+333 silly addNameRange   range: '>=0.9.1-0 <0.10.0-0',
+333 silly addNameRange   hasData: false }
+334 verbose url raw socket.io
+335 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+336 verbose url resolved https://registry.npmjs.org/socket.io
+337 info trying registry request attempt 1 at 21:33:44
+338 http GET https://registry.npmjs.org/socket.io
+339 silly addNameRange { name: 'connect', range: '>=2.7.8-0 <2.8.0-0', hasData: false }
+340 verbose url raw colors
+341 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+342 verbose url resolved https://registry.npmjs.org/colors
+343 info trying registry request attempt 1 at 21:33:44
+344 verbose etag "2YZ5WYMUI4X6FK8TB8F3HQ7SJ"
+345 http GET https://registry.npmjs.org/colors
+346 verbose url raw cookie
+347 verbose url resolving [ 'https://registry.npmjs.org/', './cookie' ]
+348 verbose url resolved https://registry.npmjs.org/cookie
+349 info trying registry request attempt 1 at 21:33:44
+350 http GET https://registry.npmjs.org/cookie
+351 verbose url raw passport-local
+352 verbose url resolving [ 'https://registry.npmjs.org/', './passport-local' ]
+353 verbose url resolved https://registry.npmjs.org/passport-local
+354 info trying registry request attempt 1 at 21:33:44
+355 http GET https://registry.npmjs.org/passport-local
+356 verbose url raw passport
+357 verbose url resolving [ 'https://registry.npmjs.org/', './passport' ]
+358 verbose url resolved https://registry.npmjs.org/passport
+359 info trying registry request attempt 1 at 21:33:44
+360 http GET https://registry.npmjs.org/passport
+361 verbose url raw jade
+362 verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+363 verbose url resolved https://registry.npmjs.org/jade
+364 info trying registry request attempt 1 at 21:33:44
+365 http GET https://registry.npmjs.org/jade
+366 verbose url raw passport-facebook
+367 verbose url resolving [ 'https://registry.npmjs.org/', './passport-facebook' ]
+368 verbose url resolved https://registry.npmjs.org/passport-facebook
+369 info trying registry request attempt 1 at 21:33:44
+370 http GET https://registry.npmjs.org/passport-facebook
+371 verbose url raw live-assets
+372 verbose url resolving [ 'https://registry.npmjs.org/', './live-assets' ]
+373 verbose url resolved https://registry.npmjs.org/live-assets
+374 info trying registry request attempt 1 at 21:33:44
+375 http GET https://registry.npmjs.org/live-assets
+376 verbose url raw mongoose
+377 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+378 verbose url resolved https://registry.npmjs.org/mongoose
+379 info trying registry request attempt 1 at 21:33:44
+380 http GET https://registry.npmjs.org/mongoose
+381 verbose url raw connect-redis
+382 verbose url resolving [ 'https://registry.npmjs.org/', './connect-redis' ]
+383 verbose url resolved https://registry.npmjs.org/connect-redis
+384 info trying registry request attempt 1 at 21:33:44
+385 http GET https://registry.npmjs.org/connect-redis
+386 verbose url raw bcrypt
+387 verbose url resolving [ 'https://registry.npmjs.org/', './bcrypt' ]
+388 verbose url resolved https://registry.npmjs.org/bcrypt
+389 info trying registry request attempt 1 at 21:33:44
+390 http GET https://registry.npmjs.org/bcrypt
+391 silly addNameRange { name: 'coffeecup',
+391 silly addNameRange   range: '>=0.3.20-0 <0.4.0-0',
+391 silly addNameRange   hasData: false }
+392 verbose url raw consolidate
+393 verbose url resolving [ 'https://registry.npmjs.org/', './consolidate' ]
+394 verbose url resolved https://registry.npmjs.org/consolidate
+395 info trying registry request attempt 1 at 21:33:44
+396 http GET https://registry.npmjs.org/consolidate
+397 verbose url raw express-resource
+398 verbose url resolving [ 'https://registry.npmjs.org/', './express-resource' ]
+399 verbose url resolved https://registry.npmjs.org/express-resource
+400 info trying registry request attempt 1 at 21:33:44
+401 http GET https://registry.npmjs.org/express-resource
+402 silly addNameRange { name: 'stylus', range: '>=0.32.1-0 <0.33.0-0', hasData: false }
+403 silly addNameRange { name: 'less', range: '*', hasData: false }
+404 verbose url raw redis-url
+405 verbose url resolving [ 'https://registry.npmjs.org/', './redis-url' ]
+406 verbose url resolved https://registry.npmjs.org/redis-url
+407 info trying registry request attempt 1 at 21:33:44
+408 http GET https://registry.npmjs.org/redis-url
+409 verbose url raw connect
+410 verbose url resolving [ 'https://registry.npmjs.org/', './connect' ]
+411 verbose url resolved https://registry.npmjs.org/connect
+412 info trying registry request attempt 1 at 21:33:44
+413 http GET https://registry.npmjs.org/connect
+414 verbose url raw coffeecup
+415 verbose url resolving [ 'https://registry.npmjs.org/', './coffeecup' ]
+416 verbose url resolved https://registry.npmjs.org/coffeecup
+417 info trying registry request attempt 1 at 21:33:44
+418 http GET https://registry.npmjs.org/coffeecup
+419 verbose url raw stylus
+420 verbose url resolving [ 'https://registry.npmjs.org/', './stylus' ]
+421 verbose url resolved https://registry.npmjs.org/stylus
+422 info trying registry request attempt 1 at 21:33:44
+423 http GET https://registry.npmjs.org/stylus
+424 verbose url raw underscore
+425 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+426 verbose url resolved https://registry.npmjs.org/underscore
+427 info trying registry request attempt 1 at 21:33:44
+428 verbose etag "9V5SIP5PQSF0Q3BYH5BZZEGU2"
+429 http GET https://registry.npmjs.org/underscore
+430 verbose url raw coffee-script
+431 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+432 verbose url resolved https://registry.npmjs.org/coffee-script
+433 info trying registry request attempt 1 at 21:33:44
+434 verbose etag "C3ZTBO8W0UEURQJ131CMXKW44"
+435 http GET https://registry.npmjs.org/coffee-script
+436 verbose url raw async
+437 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+438 verbose url resolved https://registry.npmjs.org/async
+439 info trying registry request attempt 1 at 21:33:44
+440 verbose etag "6F56H860K20W087372PUWE6TD"
+441 http GET https://registry.npmjs.org/async
+442 verbose url raw less
+443 verbose url resolving [ 'https://registry.npmjs.org/', './less' ]
+444 verbose url resolved https://registry.npmjs.org/less
+445 info trying registry request attempt 1 at 21:33:44
+446 verbose etag "D6IBEIZMB5EHJWAYWZ5DEDJOC"
+447 http GET https://registry.npmjs.org/less
+448 verbose url raw stack-trace
+449 verbose url resolving [ 'https://registry.npmjs.org/', './stack-trace' ]
+450 verbose url resolved https://registry.npmjs.org/stack-trace
+451 info trying registry request attempt 1 at 21:33:44
+452 verbose etag "11ZJZAXPH3QCLJDC1ODV12FNG"
+453 http GET https://registry.npmjs.org/stack-trace
+454 http 200 https://registry.npmjs.org/cookie
+455 silly registry.get cb [ 200,
+455 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:44 GMT',
+455 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+455 silly registry.get     etag: '"75697BASPWOS0DSLYJ3O8OO8Y"',
+455 silly registry.get     'content-type': 'application/json',
+455 silly registry.get     'cache-control': 'max-age=60',
+455 silly registry.get     'content-length': '10351',
+455 silly registry.get     'accept-ranges': 'bytes',
+455 silly registry.get     via: '1.1 varnish',
+455 silly registry.get     age: '374',
+455 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+455 silly registry.get     'x-cache': 'HIT',
+455 silly registry.get     'x-cache-hits': '2',
+455 silly registry.get     'x-timer': 'S1408023224.425187,VS0,VE0',
+455 silly registry.get     vary: 'Accept',
+455 silly registry.get     'keep-alive': 'timeout=10, max=50',
+455 silly registry.get     connection: 'Keep-Alive' } ]
+456 silly lockFile 65da37ca-pmjs-org-cookie-cookie-0-0-5-tgz https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz
+457 verbose lock https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz /Users/vitexy/.npm/65da37ca-pmjs-org-cookie-cookie-0-0-5-tgz.lock
+458 verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz',
+458 verbose addRemoteTarball   'f9acf9db57eb7568c9fcc596256b7bb22e307c81' ]
+459 info retry fetch attempt 1 at 21:33:45
+460 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/cookie/-/cookie-0.0.5.tgz
+461 http GET https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz
+462 http 200 https://registry.npmjs.org/connect-flash
+463 silly registry.get cb [ 200,
+463 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:44 GMT',
+463 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+463 silly registry.get     etag: '"99RNBDSUWU9XG24VTLIDB87V"',
+463 silly registry.get     'content-type': 'application/json',
+463 silly registry.get     'cache-control': 'max-age=60',
+463 silly registry.get     'content-length': '5586',
+463 silly registry.get     'accept-ranges': 'bytes',
+463 silly registry.get     via: '1.1 varnish',
+463 silly registry.get     age: '164',
+463 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+463 silly registry.get     'x-cache': 'HIT',
+463 silly registry.get     'x-cache-hits': '1',
+463 silly registry.get     'x-timer': 'S1408023224.506659,VS0,VE220',
+463 silly registry.get     vary: 'Accept',
+463 silly registry.get     'keep-alive': 'timeout=10, max=50',
+463 silly registry.get     connection: 'Keep-Alive' } ]
+464 silly addNameRange number 2 { name: 'connect-flash',
+464 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+464 silly addNameRange   hasData: true }
+465 silly addNameRange versions [ 'connect-flash', [ '0.1.0', '0.1.1' ] ]
+466 verbose addNamed [ 'connect-flash', '0.1.1' ]
+467 verbose addNamed [ '0.1.1', '0.1.1' ]
+468 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
+469 verbose lock connect-flash@0.1.1 /Users/vitexy/.npm/0cdf4f98-connect-flash-0-1-1.lock
+470 silly lockFile e33d4ca4-ct-flash-connect-flash-0-1-1-tgz https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+471 verbose lock https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz /Users/vitexy/.npm/e33d4ca4-ct-flash-connect-flash-0-1-1-tgz.lock
+472 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz',
+472 verbose addRemoteTarball   'd8630f26d95a7f851f9956b1e8cc6732f3b6aa30' ]
+473 info retry fetch attempt 1 at 21:33:45
+474 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+475 http GET https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+476 http 200 https://registry.npmjs.org/express-validator
+477 silly registry.get cb [ 200,
+477 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:44 GMT',
+477 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+477 silly registry.get     etag: '"1288NDWW186G34VAOWOK1E22L"',
+477 silly registry.get     'content-type': 'application/json',
+477 silly registry.get     'cache-control': 'max-age=60',
+477 silly registry.get     'content-length': '37592',
+477 silly registry.get     'accept-ranges': 'bytes',
+477 silly registry.get     via: '1.1 varnish',
+477 silly registry.get     age: '630',
+477 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+477 silly registry.get     'x-cache': 'MISS',
+477 silly registry.get     'x-cache-hits': '0',
+477 silly registry.get     'x-timer': 'S1408023224.397073,VS0,VE188',
+477 silly registry.get     vary: 'Accept',
+477 silly registry.get     'keep-alive': 'timeout=10, max=50',
+477 silly registry.get     connection: 'Keep-Alive' } ]
+478 silly addNameRange number 2 { name: 'express-validator',
+478 silly addNameRange   range: '>=0.3.2-0 <0.4.0-0',
+478 silly addNameRange   hasData: true }
+479 silly addNameRange versions [ 'express-validator',
+479 silly addNameRange   [ '0.1.0',
+479 silly addNameRange     '0.1.1',
+479 silly addNameRange     '0.1.2',
+479 silly addNameRange     '0.1.3',
+479 silly addNameRange     '0.2.0',
+479 silly addNameRange     '0.2.1',
+479 silly addNameRange     '0.2.2',
+479 silly addNameRange     '0.2.3',
+479 silly addNameRange     '0.2.4',
+479 silly addNameRange     '0.3.0',
+479 silly addNameRange     '0.3.1',
+479 silly addNameRange     '0.3.2',
+479 silly addNameRange     '0.4.0',
+479 silly addNameRange     '0.4.1',
+479 silly addNameRange     '0.5.0',
+479 silly addNameRange     '0.6.0',
+479 silly addNameRange     '0.7.0',
+479 silly addNameRange     '0.8.0',
+479 silly addNameRange     '1.0.0',
+479 silly addNameRange     '1.0.1',
+479 silly addNameRange     '2.0.0',
+479 silly addNameRange     '2.1.0',
+479 silly addNameRange     '2.1.1',
+479 silly addNameRange     '2.1.2',
+479 silly addNameRange     '2.2.0',
+479 silly addNameRange     '2.3.0' ] ]
+480 verbose addNamed [ 'express-validator', '0.3.2' ]
+481 verbose addNamed [ '0.3.2', '0.3.2' ]
+482 silly lockFile 86c1dae8-express-validator-0-3-2 express-validator@0.3.2
+483 verbose lock express-validator@0.3.2 /Users/vitexy/.npm/86c1dae8-express-validator-0-3-2.lock
+484 silly lockFile 26688e77-ator-express-validator-0-3-2-tgz https://registry.npmjs.org/express-validator/-/express-validator-0.3.2.tgz
+485 verbose lock https://registry.npmjs.org/express-validator/-/express-validator-0.3.2.tgz /Users/vitexy/.npm/26688e77-ator-express-validator-0-3-2-tgz.lock
+486 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-validator/-/express-validator-0.3.2.tgz',
+486 verbose addRemoteTarball   '3673e80b4935f72e497f2b6d91e661c091dc7ab6' ]
+487 info retry fetch attempt 1 at 21:33:45
+488 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/express-validator/-/express-validator-0.3.2.tgz
+489 http GET https://registry.npmjs.org/express-validator/-/express-validator-0.3.2.tgz
+490 http 200 https://registry.npmjs.org/passport
+491 silly registry.get cb [ 200,
+491 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:44 GMT',
+491 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+491 silly registry.get     etag: '"8KB590CKXIVVAVKCPQ1PCP43W"',
+491 silly registry.get     'content-type': 'application/json',
+491 silly registry.get     'cache-control': 'max-age=60',
+491 silly registry.get     'content-length': '31817',
+491 silly registry.get     'accept-ranges': 'bytes',
+491 silly registry.get     via: '1.1 varnish',
+491 silly registry.get     age: '564',
+491 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+491 silly registry.get     'x-cache': 'HIT',
+491 silly registry.get     'x-cache-hits': '2',
+491 silly registry.get     'x-timer': 'S1408023224.865220,VS0,VE0',
+491 silly registry.get     vary: 'Accept',
+491 silly registry.get     'keep-alive': 'timeout=10, max=49',
+491 silly registry.get     connection: 'Keep-Alive' } ]
+492 silly addNameRange number 2 { name: 'passport', range: '>=0.1.16-0 <0.2.0-0', hasData: true }
+493 silly addNameRange versions [ 'passport',
+493 silly addNameRange   [ '0.1.0',
+493 silly addNameRange     '0.1.1',
+493 silly addNameRange     '0.1.2',
+493 silly addNameRange     '0.1.3',
+493 silly addNameRange     '0.1.4',
+493 silly addNameRange     '0.1.5',
+493 silly addNameRange     '0.1.6',
+493 silly addNameRange     '0.1.7',
+493 silly addNameRange     '0.1.8',
+493 silly addNameRange     '0.1.9',
+493 silly addNameRange     '0.1.10',
+493 silly addNameRange     '0.1.11',
+493 silly addNameRange     '0.1.12',
+493 silly addNameRange     '0.1.13',
+493 silly addNameRange     '0.1.14',
+493 silly addNameRange     '0.1.15',
+493 silly addNameRange     '0.1.16',
+493 silly addNameRange     '0.1.17',
+493 silly addNameRange     '0.1.18',
+493 silly addNameRange     '0.2.0' ] ]
+494 verbose addNamed [ 'passport', '0.1.18' ]
+495 verbose addNamed [ '0.1.18', '0.1.18' ]
+496 silly lockFile 8599b435-passport-0-1-18 passport@0.1.18
+497 verbose lock passport@0.1.18 /Users/vitexy/.npm/8599b435-passport-0-1-18.lock
+498 silly lockFile d2ce4a72-org-passport-passport-0-1-18-tgz https://registry.npmjs.org/passport/-/passport-0.1.18.tgz
+499 verbose lock https://registry.npmjs.org/passport/-/passport-0.1.18.tgz /Users/vitexy/.npm/d2ce4a72-org-passport-passport-0-1-18-tgz.lock
+500 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport/-/passport-0.1.18.tgz',
+500 verbose addRemoteTarball   'c8264479dcb6414cadbb66752d12b37e0b6525a1' ]
+501 info retry fetch attempt 1 at 21:33:45
+502 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/passport/-/passport-0.1.18.tgz
+503 http GET https://registry.npmjs.org/passport/-/passport-0.1.18.tgz
+504 http 200 https://registry.npmjs.org/passport-local
+505 silly registry.get cb [ 200,
+505 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:45 GMT',
+505 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+505 silly registry.get     etag: '"KZXKBRJ8A759RAHTG1JQZ9AA"',
+505 silly registry.get     'content-type': 'application/json',
+505 silly registry.get     'cache-control': 'max-age=60',
+505 silly registry.get     'content-length': '13445',
+505 silly registry.get     'accept-ranges': 'bytes',
+505 silly registry.get     via: '1.1 varnish',
+505 silly registry.get     age: '107',
+505 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+505 silly registry.get     'x-cache': 'HIT',
+505 silly registry.get     'x-cache-hits': '1',
+505 silly registry.get     'x-timer': 'S1408023224.820765,VS0,VE218',
+505 silly registry.get     vary: 'Accept',
+505 silly registry.get     'keep-alive': 'timeout=10, max=49',
+505 silly registry.get     connection: 'Keep-Alive' } ]
+506 silly addNameRange number 2 { name: 'passport-local',
+506 silly addNameRange   range: '>=0.1.6-0 <0.2.0-0',
+506 silly addNameRange   hasData: true }
+507 silly addNameRange versions [ 'passport-local',
+507 silly addNameRange   [ '0.1.0',
+507 silly addNameRange     '0.1.1',
+507 silly addNameRange     '0.1.2',
+507 silly addNameRange     '0.1.3',
+507 silly addNameRange     '0.1.4',
+507 silly addNameRange     '0.1.5',
+507 silly addNameRange     '0.1.6',
+507 silly addNameRange     '1.0.0' ] ]
+508 verbose addNamed [ 'passport-local', '0.1.6' ]
+509 verbose addNamed [ '0.1.6', '0.1.6' ]
+510 silly lockFile 91e070c6-passport-local-0-1-6 passport-local@0.1.6
+511 verbose lock passport-local@0.1.6 /Users/vitexy/.npm/91e070c6-passport-local-0-1-6.lock
+512 silly lockFile fe15f6d0-t-local-passport-local-0-1-6-tgz https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz
+513 verbose lock https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz /Users/vitexy/.npm/fe15f6d0-t-local-passport-local-0-1-6-tgz.lock
+514 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz',
+514 verbose addRemoteTarball   'fb0cf828048db931b67d19985c7aa06dd377a9db' ]
+515 info retry fetch attempt 1 at 21:33:45
+516 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz
+517 http GET https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz
+518 http 200 https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+519 silly lockFile e33d4ca4-ct-flash-connect-flash-0-1-1-tgz https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+520 silly lockFile e33d4ca4-ct-flash-connect-flash-0-1-1-tgz https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz
+521 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
+522 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
+523 silly lockFile 42ae3d6b-connect-flash-0-1-0 connect-flash@~0.1.0
+524 silly lockFile 42ae3d6b-connect-flash-0-1-0 connect-flash@~0.1.0
+525 http 200 https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz
+526 silly lockFile 65da37ca-pmjs-org-cookie-cookie-0-0-5-tgz https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz
+527 silly lockFile 65da37ca-pmjs-org-cookie-cookie-0-0-5-tgz https://registry.npmjs.org/cookie/-/cookie-0.0.5.tgz
+528 silly lockFile fe08ced7-cookie-0-0-5 cookie@0.0.5
+529 silly lockFile fe08ced7-cookie-0-0-5 cookie@0.0.5
+530 http 200 https://registry.npmjs.org/passport-facebook
+531 silly registry.get cb [ 200,
+531 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:45 GMT',
+531 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+531 silly registry.get     etag: '"EM3HXIXPVUNEKO2HWEN04AHGC"',
+531 silly registry.get     'content-type': 'application/json',
+531 silly registry.get     'cache-control': 'max-age=60',
+531 silly registry.get     'content-length': '19530',
+531 silly registry.get     'accept-ranges': 'bytes',
+531 silly registry.get     via: '1.1 varnish',
+531 silly registry.get     age: '565',
+531 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+531 silly registry.get     'x-cache': 'MISS',
+531 silly registry.get     'x-cache-hits': '0',
+531 silly registry.get     'x-timer': 'S1408023225.259922,VS0,VE182',
+531 silly registry.get     vary: 'Accept',
+531 silly registry.get     'keep-alive': 'timeout=10, max=48',
+531 silly registry.get     connection: 'Keep-Alive' } ]
+532 http 200 https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz
+533 silly addNameRange number 2 { name: 'passport-facebook',
+533 silly addNameRange   range: '>=0.1.5-0 <0.2.0-0',
+533 silly addNameRange   hasData: true }
+534 silly addNameRange versions [ 'passport-facebook',
+534 silly addNameRange   [ '0.1.0',
+534 silly addNameRange     '0.1.1',
+534 silly addNameRange     '0.1.2',
+534 silly addNameRange     '0.1.3',
+534 silly addNameRange     '0.1.4',
+534 silly addNameRange     '0.1.5',
+534 silly addNameRange     '0.1.6',
+534 silly addNameRange     '1.0.0',
+534 silly addNameRange     '1.0.1',
+534 silly addNameRange     '1.0.2',
+534 silly addNameRange     '1.0.3' ] ]
+535 verbose addNamed [ 'passport-facebook', '0.1.6' ]
+536 verbose addNamed [ '0.1.6', '0.1.6' ]
+537 silly lockFile 4c864a30-passport-facebook-0-1-6 passport-facebook@0.1.6
+538 verbose lock passport-facebook@0.1.6 /Users/vitexy/.npm/4c864a30-passport-facebook-0-1-6.lock
+539 silly lockFile 0586ffc7-book-passport-facebook-0-1-6-tgz https://registry.npmjs.org/passport-facebook/-/passport-facebook-0.1.6.tgz
+540 verbose lock https://registry.npmjs.org/passport-facebook/-/passport-facebook-0.1.6.tgz /Users/vitexy/.npm/0586ffc7-book-passport-facebook-0-1-6-tgz.lock
+541 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport-facebook/-/passport-facebook-0.1.6.tgz',
+541 verbose addRemoteTarball   '1db2141f4cf275a8b5d8504c71708b4c4d98581c' ]
+542 silly lockFile fe15f6d0-t-local-passport-local-0-1-6-tgz https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz
+543 silly lockFile fe15f6d0-t-local-passport-local-0-1-6-tgz https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz
+544 silly lockFile 91e070c6-passport-local-0-1-6 passport-local@0.1.6
+545 silly lockFile 91e070c6-passport-local-0-1-6 passport-local@0.1.6
+546 info retry fetch attempt 1 at 21:33:46
+547 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/passport-facebook/-/passport-facebook-0.1.6.tgz
+548 silly lockFile 1de19954-passport-local-0-1-6 passport-local@~0.1.6
+549 silly lockFile 1de19954-passport-local-0-1-6 passport-local@~0.1.6
+550 http GET https://registry.npmjs.org/passport-facebook/-/passport-facebook-0.1.6.tgz
+551 http 200 https://registry.npmjs.org/live-assets
+552 silly registry.get cb [ 200,
+552 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:46 GMT',
+552 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+552 silly registry.get     etag: '"B29ZQLY5LSMQ6U616V4XUZJU9"',
+552 silly registry.get     'content-type': 'application/json',
+552 silly registry.get     'cache-control': 'max-age=60',
+552 silly registry.get     'content-length': '13165',
+552 silly registry.get     'accept-ranges': 'bytes',
+552 silly registry.get     via: '1.1 varnish',
+552 silly registry.get     age: '0',
+552 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+552 silly registry.get     'x-cache': 'MISS',
+552 silly registry.get     'x-cache-hits': '0',
+552 silly registry.get     'x-timer': 'S1408023225.318932,VS0,VE956',
+552 silly registry.get     vary: 'Accept',
+552 silly registry.get     'keep-alive': 'timeout=10, max=48',
+552 silly registry.get     connection: 'Keep-Alive' } ]
+553 silly addNameRange number 2 { name: 'live-assets',
+553 silly addNameRange   range: '>=0.1.8-0 <0.2.0-0',
+553 silly addNameRange   hasData: true }
+554 silly addNameRange versions [ 'live-assets',
+554 silly addNameRange   [ '0.0.1',
+554 silly addNameRange     '0.1.0',
+554 silly addNameRange     '0.1.1',
+554 silly addNameRange     '0.1.2',
+554 silly addNameRange     '0.1.4',
+554 silly addNameRange     '0.1.5',
+554 silly addNameRange     '0.1.6',
+554 silly addNameRange     '0.1.7',
+554 silly addNameRange     '0.1.8',
+554 silly addNameRange     '0.1.9',
+554 silly addNameRange     '0.1.10' ] ]
+555 verbose addNamed [ 'live-assets', '0.1.10' ]
+556 verbose addNamed [ '0.1.10', '0.1.10' ]
+557 silly lockFile 738e007b-live-assets-0-1-10 live-assets@0.1.10
+558 verbose lock live-assets@0.1.10 /Users/vitexy/.npm/738e007b-live-assets-0-1-10.lock
+559 silly lockFile 37b24019-ve-assets-live-assets-0-1-10-tgz https://registry.npmjs.org/live-assets/-/live-assets-0.1.10.tgz
+560 verbose lock https://registry.npmjs.org/live-assets/-/live-assets-0.1.10.tgz /Users/vitexy/.npm/37b24019-ve-assets-live-assets-0-1-10-tgz.lock
+561 verbose addRemoteTarball [ 'https://registry.npmjs.org/live-assets/-/live-assets-0.1.10.tgz',
+561 verbose addRemoteTarball   '6a6732eb8e68fac6a72181a2b13e1754fdd6f819' ]
+562 info retry fetch attempt 1 at 21:33:46
+563 verbose fetch to= /var/folders/ym/_tymb01j1pn1mjvkw6x9k_m00000gn/T/npm-817-IchLFT3n/registry.npmjs.org/live-assets/-/live-assets-0.1.10.tgz
+564 http GET https://registry.npmjs.org/live-assets/-/live-assets-0.1.10.tgz
+565 http 200 https://registry.npmjs.org/colors
+566 silly registry.get cb [ 200,
+566 silly registry.get   { date: 'Thu, 14 Aug 2014 13:33:45 GMT',
+566 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+566 silly registry.get     etag: '"AHS6YKBMCT34R8D7FFEEK90T9"',
+566 silly registry.get     'content-type': 'application/json',
+566 silly registry.get     'cache-control': 'max-age=60',
+566 silly registry.get     'content-length': '8562',
+566 silly registry.get     'accept-ranges': 'bytes',
+566 silly registry.get     via: '1.1 varnish',
+566 silly registry.get     age: '273',
+566 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+566 silly registry.get     'x-cache': 'HIT',
+566 silly registry.get     'x-cache-hits': '1',
+566 silly registry.get     'x-timer': 'S1408023225.496466,VS0,VE218',
+566 silly registry.get     vary: 'Accept',
+566 silly registry.get     'keep-alive': 'timeout=10, max=50',
+566 silly registry.get     connection: 'Keep-Alive' } ]
+567 silly addNameRange number 2 { name: 'colors', range: '>=0.6.0-1 <0.7.0-0', hasData: true }
+568 silly addNameRange versions [ 'colors',
+568 silly addNameRange   [ '0.3.0', '0.5.0', '0.5.1', '0.6.0', '0.6.0-1', '0.6.1', '0.6.2' ] ]
+569 verbose addNamed [ 'colors', '0.6.2' ]
+570 verbose addNamed [ '0.6.2', '0.6.2' ]
+571 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+572 verbose lock colors@0.6.2 /Users/vitexy/.npm/1ce149d5-colors-0-6-2.lock
+573 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+574 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+575 silly lockFile f29bff6b-colors-0-6-0-1 colors@~0.6.0-1
+576 silly lockFile f29bff6b-colors-0-6-0-1 colors@~0.6.0-1
+577 verbose about to build /Users/vitexy/Desktop/kpagesadmin/node_modules/live
+578 info /Users/vitexy/Desktop/kpagesadmin/node_modules/live unbuild
+579 info preuninstall live@0.0.3-2
+580 info uninstall live@0.0.3-2
+581 verbose true,/Users/vitexy/Desktop/kpagesadmin/node_modules,/Users/vitexy/Desktop/kpagesadmin/node_modules unbuild live@0.0.3-2
+582 info postuninstall live@0.0.3-2
+583 error Error: EACCES, open '/Users/vitexy/.npm/colors/0.6.2/package/package.json'
+583 error  { [Error: EACCES, open '/Users/vitexy/.npm/colors/0.6.2/package/package.json']
+583 error   errno: 3,
+583 error   code: 'EACCES',
+583 error   path: '/Users/vitexy/.npm/colors/0.6.2/package/package.json',
+583 error   parent: 'live' }
+584 error Please try running this command again as root/Administrator.
+585 error System Darwin 13.2.0
+586 error command "node" "/usr/local/bin/npm" "install" "live"
+587 error cwd /Users/vitexy/Desktop/kpagesadmin
+588 error node -v v0.10.29
+589 error npm -v 1.4.14
+590 error path /Users/vitexy/.npm/colors/0.6.2/package/package.json
+591 error code EACCES
+592 error errno 3
+593 error stack Error: EACCES, open '/Users/vitexy/.npm/colors/0.6.2/package/package.json'
+594 verbose exit [ 3, true ]
